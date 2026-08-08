@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Latihan Dasar JavaScript: Paket B</title>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Latihan Dasar JavaScript — Paket B</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Sekolah membuka kegiatan <strong>Workshop UI Design</strong> dengan kapasitas <strong>40 peserta</strong>. Saat pendaftaran dibuka, sudah ada <strong>27 peserta</strong> yang terdaftar dan status pendaftaran masih <strong>true</strong>. Hari ini ada <strong>5 peserta baru</strong> yang mendaftar. Buat program yang menyimpan informasi kegiatan tersebut dan menampilkan kondisi pendaftaran terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kegiatan: Workshop UI Design
+Kapasitas: 40
+Peserta Terdaftar: 32
+Pendaftaran Dibuka: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Kita sedang mencatat data penyewaan sepeda sekolah. Nama sepeda yang dipinjam adalah <strong>“City Bike”</strong>, nomor sepeda <strong>17</strong>, biaya sewa tetap <strong>Rp10.000</strong>, dan status sudah dikembalikan awalnya <strong>false</strong>. Setelah digunakan, sepeda dikembalikan sehingga statusnya berubah. Buat program yang menyimpan dan menampilkan data penyewaan terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Sepeda: City Bike
+Nomor: 17
+Biaya Sewa: Rp10000
+Sudah Dikembalikan: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Sebuah akun media sosial sekolah memiliki nama <strong>“RPL Kreatif”</strong>, jumlah pengikut awal <strong>840</strong>, jumlah postingan <strong>26</strong>, dan status akun terverifikasi <strong>false</strong>. Setelah kegiatan sekolah dipublikasikan, jumlah pengikut bertambah menjadi <strong>915</strong>. Buat program yang menyimpan dan menampilkan kondisi akun terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Akun: RPL Kreatif
+Pengikut: 915
+Postingan: 26
+Terverifikasi: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Kantin sekolah memiliki sistem pre-order. Kita memesan menu <strong>“Rice Bowl Ayam”</strong>, mendapatkan nomor antrean <strong>18</strong>, waktu pengambilan <strong>“12:30”</strong>, dan status pembayaran awalnya <strong>false</strong>. Setelah pembayaran dilakukan, status tersebut berubah. Buat program yang menyimpan dan menampilkan informasi pesanan terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Menu: Rice Bowl Ayam
+Nomor Antrean: 18
+Waktu Ambil: 12:30
+Sudah Dibayar: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Delapan siswa mengumpulkan uang kas sebesar <strong>Rp25.000 per siswa</strong>. Sebelum uang tersebut dikumpulkan, kas kelas masih memiliki saldo <strong>Rp40.000</strong>. Hari ini kas digunakan untuk membeli perlengkapan kelas sebesar <strong>Rp150.000</strong>. Buat program untuk mengetahui jumlah uang yang terkumpul, total kas sebelum belanja, dan sisa kas setelah membeli perlengkapan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Uang Terkumpul: Rp200000
+Total Kas: Rp240000
+Sisa Kas: Rp90000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Panitia sekolah ingin membuat dekorasi berbentuk <strong>segitiga</strong> dengan panjang alas <strong>6 meter</strong> dan tinggi <strong>4 meter</strong>. Biaya bahan dekorasi adalah <strong>Rp28.000 untuk setiap meter persegi</strong>. Dana yang tersedia sebesar <strong>Rp350.000</strong>. Buat program untuk mengetahui luas dekorasi, total biaya yang dibutuhkan, dan apakah dana yang tersedia cukup.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Dekorasi: 12 m²
+Total Biaya: Rp336000
+Dana Cukup: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah tempat penampungan air berbentuk <strong>kubus</strong> memiliki panjang sisi <strong>50 cm</strong>. Setiap <strong>1.000 cm³</strong> sama dengan <strong>1 liter air</strong>. Buat program untuk mengetahui volume maksimal tempat penampungan tersebut dalam cm³ dan berapa liter air yang dapat ditampung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Penampungan: 125000 cm³
+Kapasitas Air: 125 liter
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Kita memiliki paket internet sebesar <strong>12 GB</strong>. Minggu ini kuota digunakan <strong>3,5 GB</strong> untuk media sosial, <strong>4 GB</strong> untuk menonton video, dan <strong>2,25 GB</strong> untuk bermain game. Kuota dianggap masih aman jika sisanya minimal <strong>2 GB</strong> dan total pemakaiannya masih di bawah <strong>10 GB</strong>. Buat program untuk mengetahui total pemakaian, sisa kuota, dan kondisi kuota saat ini.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Pemakaian: 9.75 GB
+Sisa Kuota: 2.25 GB
+Kuota Aman: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Sekolah memberikan <strong>sertifikat kehadiran terbaik</strong> jika tingkat kehadiran mencapai minimal <strong>90%</strong>. Bulan ini tingkat kehadiran kita adalah <strong>94%</strong>. Jika syarat tersebut terpenuhi, program perlu menampilkan pesan bahwa sertifikat berhasil didapatkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Sertifikat Kehadiran Didapatkan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Baterai HP yang digunakan untuk belajar coding tersisa <strong>18%</strong>. Mode hemat baterai akan aktif jika daya baterai berada di bawah <strong>20%</strong>. Jika baterai tidak berada di bawah batas tersebut, HP tetap menggunakan mode normal. Buat program yang menentukan mode yang aktif.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Mode Hemat Baterai Aktif
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Sebuah toko menggunakan jumlah stok untuk menentukan kondisi barang. Jika stok <strong>0</strong>, statusnya <strong>“Habis”</strong>. Jika stok berada dari <strong>1 sampai 5</strong>, statusnya <strong>“Menipis”</strong>. Jika stok lebih dari <strong>5</strong>, statusnya <strong>“Aman”</strong>. Saat ini stok kabel data tersisa <strong>4 unit</strong>. Buat program yang menentukan kondisi stok tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Stok Kabel Data: 4
+Status: Menipis
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Jasa pengiriman memiliki beberapa kode layanan. Kode <strong>“REG”</strong> berarti <strong>Regular</strong>, <strong>“EXP”</strong> berarti <strong>Express</strong>, dan <strong>“SMD”</strong> berarti <strong>Same Day</strong>. Sebuah paket menggunakan kode layanan <strong>“EXP”</strong>. Buat program yang menampilkan jenis layanan berdasarkan kode tersebut. Jika kode tidak tersedia, tampilkan bahwa layanan tidak ditemukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode: EXP
+Layanan: Express
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Kita memiliki jadwal ekstrakurikuler coding pada hari <strong>Senin, Rabu, Jumat, dan Sabtu</strong>. Semua jadwal tersebut disimpan dalam satu daftar. Buat program yang menampilkan jumlah jadwal yang tersedia dan hari pada urutan kedua.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jumlah Jadwal: 4
+Jadwal Kedua: Rabu
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Sebuah tempat fotokopi mencatat biaya empat pesanan dalam satu daftar yaitu <strong>Rp8.000, Rp12.000, Rp5.000, dan Rp15.000</strong>. Pesanan pertama dan pesanan keempat berasal dari kelas yang sama. Buat program yang menampilkan biaya kedua pesanan tersebut dan total yang harus dibayar oleh kelas tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pesanan Pertama: Rp8000
+Pesanan Keempat: Rp15000
+Total: Rp23000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Kita mencatat kapasitas penyimpanan empat folder tugas yaitu <strong>120 MB, 85 MB, 200 MB, dan 150 MB</strong> dalam satu daftar. Program perlu menampilkan ukuran folder kedua dan folder ketiga, lalu menghitung selisih ukuran keduanya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Folder Kedua: 85 MB
+Folder Ketiga: 200 MB
+Selisih: 115 MB
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Sebuah tempat parkir memiliki empat area dengan jumlah kendaraan <strong>12, 7, 15, dan 9 kendaraan</strong>. Data tersebut disimpan dalam satu daftar. Area pertama memiliki kapasitas maksimal <strong>20 kendaraan</strong>. Buat program untuk mengetahui jumlah kendaraan di area pertama dan berapa tempat yang masih kosong pada area tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kendaraan Area 1: 12
+Tempat Masih Kosong: 8
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Dalam sebuah game, bonus harian dimulai dari <strong>30 koin pada hari pertama</strong>. Setiap hari berikutnya bonus bertambah <strong>30 koin</strong> sampai hari keenam. Buat program yang menampilkan jumlah bonus dari hari pertama sampai hari keenam, lalu menghitung seluruh koin yang didapatkan selama enam hari.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hari 1: 30 koin
+Hari 2: 60 koin
+Hari 3: 90 koin
+Hari 4: 120 koin
+Hari 5: 150 koin
+Hari 6: 180 koin
+
+Total Koin: 630
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Kita mencatat persentase baterai enam HP yang digunakan saat praktik yaitu <strong>75%, 18%, 42%, 9%, 60%, dan 25%</strong>. Baterai dianggap perlu segera diisi jika berada di bawah <strong>20%</strong>. Buat program yang memeriksa seluruh data tersebut dan menghitung berapa HP yang perlu segera diisi.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jumlah HP yang Perlu Diisi: 2
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Tempat fotokopi menerima lima pesanan dengan jumlah halaman <strong>3, 5, 2, 6, dan 4 lembar</strong>. Biaya mencetak satu lembar adalah <strong>Rp2.000</strong>. Buat program yang menghitung biaya setiap pesanan secara berurutan dan total seluruh pendapatan dari lima pesanan tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pesanan 1: Rp6000
+Pesanan 2: Rp10000
+Pesanan 3: Rp4000
+Pesanan 4: Rp12000
+Pesanan 5: Rp8000
+
+Total Pendapatan: Rp40000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Sebuah game mencatat enam skor yaitu <strong>32, 47, 50, 61, 74, dan 83</strong>. Skor tersebut ingin diperiksa untuk mengetahui berapa yang merupakan <strong>angka genap</strong> dan berapa yang merupakan <strong>angka ganjil</strong>. Buat program yang memeriksa seluruh skor dan menghitung jumlah dari masing-masing kelompok.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jumlah Skor Genap: 3
+Jumlah Skor Ganjil: 3
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Latihan Dasar JavaScript — <strong>Paket B</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

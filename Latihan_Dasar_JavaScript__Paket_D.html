@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Latihan Dasar JavaScript: Paket D</title>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Latihan Dasar JavaScript — Paket D</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Laboratorium sekolah memiliki jaringan WiFi bernama <strong>“Lab RPL”</strong> dengan kapasitas maksimal <strong>30 perangkat</strong>. Saat ini ada <strong>22 perangkat</strong> yang terhubung dan status jaringan terlindungi adalah <strong>true</strong>. Setelah jam praktik selesai, <strong>6 perangkat</strong> terputus dari jaringan. Buat program yang menyimpan dan menampilkan kondisi jaringan terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama WiFi: Lab RPL
+Kapasitas: 30 perangkat
+Perangkat Terhubung: 16
+Jaringan Terlindungi: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Sebuah toko online memiliki voucher dengan kode <strong>“HEMAT10”</strong>. Voucher tersebut memberikan potongan <strong>10%</strong>, masih bisa digunakan sebanyak <strong>8 kali</strong>, dan status voucher aktif adalah <strong>true</strong>. Hari ini voucher digunakan sebanyak <strong>2 kali</strong>. Buat program yang menyimpan informasi voucher dan menampilkan kondisi terbarunya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode Voucher: HEMAT10
+Diskon: 10%
+Sisa Penggunaan: 6
+Status Aktif: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Bus sekolah dengan rute <strong>“Binjai Kota”</strong> memiliki harga tiket tetap <strong>Rp6.000</strong>, membawa <strong>24 penumpang</strong>, dan status AC menyala adalah <strong>true</strong>. Di sebuah halte, <strong>5 penumpang turun</strong> lalu <strong>3 penumpang baru naik</strong>. Buat program yang menyimpan dan menampilkan kondisi bus setelah berhenti di halte tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Rute: Binjai Kota
+Harga Tiket: Rp6000
+Jumlah Penumpang: 22
+AC Menyala: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Kita memiliki tugas online dengan judul <strong>“Latihan Algoritma”</strong>, batas pengumpulan <strong>“15 Agustus 2026”</strong>, jumlah tugas yang sudah masuk <strong>21</strong>, dan status pengumpulan masih dibuka <strong>true</strong>. Setelah batas waktu berakhir, status pengumpulan berubah menjadi ditutup. Buat program yang menyimpan dan menampilkan informasi tugas terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tugas: Latihan Algoritma
+Batas Pengumpulan: 15 Agustus 2026
+Tugas Masuk: 21
+Pengumpulan Dibuka: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Kita menggunakan ojek online untuk perjalanan sejauh <strong>6 km</strong>. Biaya awal perjalanan adalah <strong>Rp5.000</strong> dan biaya setiap kilometer adalah <strong>Rp2.500</strong>. Kita membayar menggunakan uang <strong>Rp25.000</strong>. Buat program untuk mengetahui biaya perjalanan dan uang yang masih tersisa setelah pembayaran.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jarak Perjalanan: 6 km
+Biaya Perjalanan: Rp20000
+Uang Dibayar: Rp25000
+Sisa Uang: Rp5000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Sekolah memiliki kolam hias berbentuk <strong>lingkaran</strong> dengan jari-jari <strong>7 meter</strong>. Bagian permukaan kolam akan diberi dekorasi dengan biaya <strong>Rp10.000 untuk setiap meter persegi</strong>. Untuk perhitungan ini gunakan nilai π = <strong>22 ÷ 7</strong>. Buat program untuk mengetahui luas kolam dan total biaya dekorasi yang dibutuhkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Kolam: 154 m²
+Total Biaya Dekorasi: Rp1540000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah kotak penyimpanan alat praktik berbentuk <strong>balok</strong> dengan panjang <strong>80 cm</strong>, lebar <strong>40 cm</strong>, dan tinggi <strong>50 cm</strong>. Peralatan yang sudah dimasukkan menggunakan ruang sebesar <strong>40.000 cm³</strong>. Buat program untuk mengetahui volume seluruh kotak dan berapa ruang yang masih kosong.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Kotak: 160000 cm³
+Ruang Terpakai: 40000 cm³
+Ruang Kosong: 120000 cm³
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Panitia kegiatan memiliki dana sebesar <strong>Rp100.000</strong>. Dana tersebut digunakan untuk transportasi <strong>Rp20.000</strong>, makan <strong>Rp35.000</strong>, dan tiket masuk <strong>Rp25.000</strong>. Dana dianggap masih aman jika sisa uang minimal <strong>Rp20.000</strong> dan total pengeluaran tidak lebih dari <strong>Rp80.000</strong>. Buat program untuk mengetahui total pengeluaran, sisa dana, dan kondisi dana tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Pengeluaran: Rp80000
+Sisa Dana: Rp20000
+Dana Aman: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Sebuah game memberikan hadiah <strong>“Bonus Streak”</strong> jika pemain berhasil login minimal <strong>7 hari berturut-turut</strong>. Saat ini kita sudah login selama <strong>8 hari berturut-turut</strong>. Jika syarat tersebut terpenuhi, tampilkan pesan bahwa bonus berhasil didapatkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Bonus Streak Didapatkan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Suhu di ruang komputer saat ini adalah <strong>29°C</strong>. Kipas tambahan akan dinyalakan jika suhu berada di atas <strong>28°C</strong>. Jika suhu tidak melewati batas tersebut, kipas tetap dimatikan. Buat program yang menentukan kondisi kipas saat ini.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kipas Dinyalakan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Jasa pengiriman membagi paket berdasarkan beratnya. Paket dengan berat maksimal <strong>1 kg</strong> masuk kategori <strong>“Ringan”</strong>. Berat di atas <strong>1 kg sampai 3 kg</strong> masuk kategori <strong>“Sedang”</strong>. Jika lebih dari <strong>3 kg</strong>, paket masuk kategori <strong>“Berat”</strong>. Sebuah paket memiliki berat <strong>2,5 kg</strong>. Buat program yang menentukan kategori paket tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Berat Paket: 2.5 kg
+Kategori: Sedang
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Sebuah kegiatan sekolah memiliki kode divisi <strong>“COD” = Coding</strong>, <strong>“DSN” = Design</strong>, dan <strong>“NET” = Networking</strong>. Peserta yang kita cek memiliki kode divisi <strong>“DSN”</strong>. Buat program yang menampilkan nama divisi sesuai kode tersebut. Jika kode tidak tersedia, tampilkan bahwa divisi tidak ditemukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode Divisi: DSN
+Divisi: Design
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Kita memiliki daftar perlengkapan praktik yaitu <strong>“Keyboard”, “Mouse”, “Headset”, “Webcam”, dan “Flashdisk”</strong>. Semua data tersebut disimpan dalam satu daftar. Buat program yang menampilkan perlengkapan pada urutan ketiga dan jumlah seluruh perlengkapan yang tersedia.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Perlengkapan Ketiga: Headset
+Jumlah Perlengkapan: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Sebuah game mencatat energi empat karakter yaitu <strong>72, 80, 88, dan 96</strong>. Semua data disimpan dalam satu daftar. Kita ingin mengetahui rata-rata energi karakter kedua dan karakter ketiga. Buat program yang menampilkan kedua data tersebut dan hasil rata-ratanya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Energi Karakter Kedua: 80
+Energi Karakter Ketiga: 88
+Rata-rata Energi: 84
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Kita memiliki empat pilihan kapasitas flashdisk yaitu <strong>16 GB, 32 GB, 64 GB, dan 128 GB</strong> dalam satu daftar. Flashdisk pertama dan terakhir akan digunakan untuk menyimpan file cadangan. Buat program yang menampilkan kapasitas keduanya dan menghitung total kapasitas yang tersedia.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Flashdisk Pertama: 16 GB
+Flashdisk Terakhir: 128 GB
+Total Kapasitas: 144 GB
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Kelompok piket kelas memiliki daftar anggota <strong>Adit, Nisa, Reno, dan Tari</strong>. Hari ini Reno tidak bisa hadir dan posisinya digantikan oleh <strong>Lina</strong>. Buat program yang menyimpan daftar anggota, mengganti data yang diperlukan, lalu menampilkan daftar piket terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Daftar Piket Terbaru:
+Adit, Nisa, Lina, Tari
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Ruang komputer memiliki <strong>6 komputer</strong> yang sedang dipersiapkan untuk praktik. Setiap komputer membutuhkan <strong>2 kabel</strong>. Buat program yang menampilkan kebutuhan kabel untuk komputer pertama sampai komputer keenam, lalu menghitung seluruh kabel yang dibutuhkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Komputer 1: 2 kabel
+Komputer 2: 2 kabel
+Komputer 3: 2 kabel
+Komputer 4: 2 kabel
+Komputer 5: 2 kabel
+Komputer 6: 2 kabel
+
+Total Kabel: 12
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Sebuah toko memiliki lima barang dengan harga <strong>Rp10.000, Rp15.000, Rp20.000, Rp25.000, dan Rp30.000</strong>. Hari ini semua barang mendapatkan potongan harga sebesar <strong>10%</strong>. Buat program yang menghitung harga setiap barang setelah mendapatkan potongan dan total harga seluruh barang setelah diskon.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Barang 1: Rp9000
+Barang 2: Rp13500
+Barang 3: Rp18000
+Barang 4: Rp22500
+Barang 5: Rp27000
+
+Total Setelah Diskon: Rp90000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Kita mencatat nilai lima latihan yaitu <strong>72, 88, 65, 91, dan 80</strong>. Target nilai setiap latihan adalah <strong>100</strong>. Buat program yang membaca seluruh nilai dan menampilkan berapa poin lagi yang dibutuhkan setiap latihan untuk mencapai target. Setelah itu, hitung juga seluruh kekurangan poinnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Latihan 1: Kurang 28 poin
+Latihan 2: Kurang 12 poin
+Latihan 3: Kurang 35 poin
+Latihan 4: Kurang 9 poin
+Latihan 5: Kurang 20 poin
+
+Total Kekurangan Poin: 104
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Sebuah kegiatan sosial mencatat enam sumbangan sebesar <strong>Rp5.000, Rp12.000, Rp8.000, Rp15.000, Rp4.000, dan Rp10.000</strong>. Sumbangan yang mencapai minimal <strong>Rp10.000</strong> akan dimasukkan ke dalam kelompok donasi utama. Buat program yang memeriksa seluruh data, menghitung berapa sumbangan yang masuk kelompok tersebut, dan menghitung total uang dari sumbangan yang memenuhi syarat.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jumlah Donasi Utama: 3
+Total Donasi Utama: Rp37000
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Latihan Dasar JavaScript — <strong>Paket D</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

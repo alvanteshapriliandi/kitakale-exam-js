@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Latihan Dasar JavaScript: Paket C</title>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Latihan Dasar JavaScript — Paket C</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Kita sedang mencatat data peminjaman buku di perpustakaan. Judul buku yang dipinjam adalah <strong>“Belajar JavaScript Dasar”</strong>, lama peminjaman awal <strong>3 hari</strong>, nomor rak <strong>12</strong>, dan status buku sudah dikembalikan <strong>false</strong>. Karena ada tambahan waktu, lama peminjaman berubah menjadi <strong>5 hari</strong>. Buat program yang menyimpan dan menampilkan data peminjaman terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Judul Buku: Belajar JavaScript Dasar
+Nomor Rak: 12
+Lama Peminjaman: 5 hari
+Sudah Dikembalikan: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Sebuah akun streaming sekolah memiliki nama kanal <strong>“Khaidir Media”</strong>, jumlah video <strong>18</strong>, jumlah subscriber awal <strong>560</strong>, dan status live sekarang <strong>false</strong>. Setelah acara sekolah selesai diunggah, jumlah subscriber berubah menjadi <strong>625</strong>. Buat program yang menyimpan dan menampilkan informasi kanal terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Kanal: Khaidir Media
+Jumlah Video: 18
+Subscriber: 625
+Sedang Live: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Kita mencatat data sebuah motor yang digunakan untuk praktik. Nama motor adalah <strong>“Beat Street”</strong>, tahun produksi <strong>2024</strong>, bensin awal <strong>5 liter</strong>, dan status mesin menyala <strong>true</strong>. Setelah digunakan, bensin tersisa <strong>3 liter</strong>. Buat program yang menyimpan dan menampilkan kondisi motor terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Motor: Beat Street
+Tahun: 2024
+Bensin Tersisa: 3 liter
+Mesin Menyala: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Sebuah tiket bioskop memiliki nama film <strong>“Petualangan Digital”</strong>, nomor kursi <strong>B12</strong>, harga tetap <strong>Rp45.000</strong>, dan status tiket sudah digunakan awalnya <strong>false</strong>. Setelah masuk ke studio, status tiket berubah menjadi sudah digunakan. Buat program yang menyimpan dan menampilkan informasi tiket terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Film: Petualangan Digital
+Kursi: B12
+Harga: Rp45000
+Sudah Digunakan: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Kita memiliki uang saku sebesar <strong>Rp120.000</strong>. Hari ini digunakan untuk membeli bensin <strong>Rp25.000</strong>, makan siang <strong>Rp18.000</strong>, dan fotokopi <strong>Rp7.000</strong>. Setelah itu, kita mendapatkan tambahan uang sebesar <strong>Rp20.000</strong>. Buat program untuk mengetahui total pengeluaran dan jumlah uang yang tersedia setelah semua transaksi selesai.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Pengeluaran: Rp50000
+Uang Setelah Pengeluaran: Rp70000
+Uang Akhir: Rp90000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Sebuah taman sekolah berbentuk <strong>persegi</strong> dengan panjang sisi <strong>8 meter</strong>. Di sekeliling taman akan dipasang pagar dengan biaya <strong>Rp25.000 per meter</strong>. Buat program untuk mengetahui luas taman, panjang pagar yang dibutuhkan, dan total biaya pemasangan pagar.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Taman: 64 m²
+Panjang Pagar: 32 meter
+Total Biaya: Rp800000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah lemari penyimpanan berbentuk <strong>balok</strong> dengan panjang <strong>60 cm</strong>, lebar <strong>40 cm</strong>, dan tinggi <strong>50 cm</strong>. Ruang di dalam lemari akan dibagi menjadi <strong>6 bagian sama besar</strong>. Buat program untuk mengetahui volume seluruh lemari dan volume setiap bagiannya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Lemari: 120000 cm³
+Volume Setiap Bagian: 20000 cm³
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Sebuah kelas mengumpulkan <strong>240 lembar kertas bekas</strong>. Kertas tersebut akan dibagi sama rata kepada <strong>7 kelompok</strong>. Setelah dibagikan sebanyak mungkin, program perlu mengetahui berapa lembar yang diterima setiap kelompok dan berapa lembar yang masih tersisa.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kertas Setiap Kelompok: 34 lembar
+Sisa Kertas: 2 lembar
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Sebuah aplikasi belajar memberikan badge <strong>“Rajin Belajar”</strong> jika waktu belajar hari ini mencapai minimal <strong>120 menit</strong>. Hari ini waktu belajar kita adalah <strong>135 menit</strong>. Jika syarat tersebut tercapai, tampilkan pesan bahwa badge berhasil didapatkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Badge Rajin Belajar Didapatkan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Sebuah tempat parkir memiliki kapasitas <strong>30 kendaraan</strong>. Saat ini sudah ada <strong>30 kendaraan</strong> di dalam area parkir. Jika masih ada tempat kosong, kendaraan baru bisa masuk. Jika kapasitas sudah penuh, kendaraan baru tidak bisa masuk. Buat program yang menentukan kondisi parkir tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Parkir Penuh
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Sebuah aplikasi mengelompokkan kecepatan internet berdasarkan hasil tes. Jika kecepatan minimal <strong>50 Mbps</strong>, statusnya <strong>“Cepat”</strong>. Jika kecepatannya minimal <strong>20 Mbps tetapi di bawah 50 Mbps</strong>, statusnya <strong>“Sedang”</strong>. Jika berada di bawah <strong>20 Mbps</strong>, statusnya <strong>“Lambat”</strong>. Hasil tes hari ini adalah <strong>32 Mbps</strong>. Buat program yang menentukan status koneksi tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kecepatan: 32 Mbps
+Status: Sedang
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Sebuah mesin fotokopi memiliki pilihan ukuran kertas dengan kode <strong>“A4” = A4</strong>, <strong>“F4” = Folio</strong>, dan <strong>“A3” = A3</strong>. Hari ini kode yang dipilih adalah <strong>“F4”</strong>. Buat program yang menampilkan ukuran kertas sesuai kode tersebut. Jika kode tidak tersedia, tampilkan bahwa ukuran tidak ditemukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode: F4
+Ukuran Kertas: Folio
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Kita memiliki daftar warna untuk desain poster yaitu <strong>“Ungu”, “Kuning”, “Putih”, “Hitam”, dan “Abu-abu”</strong>. Buat program yang menampilkan warna kedua, warna keempat, dan jumlah seluruh warna yang tersedia.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Warna Kedua: Kuning
+Warna Keempat: Hitam
+Jumlah Warna: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Sebuah kelas mencatat jumlah siswa yang hadir selama empat hari yaitu <strong>28, 30, 27, dan 29 siswa</strong>. Semua data disimpan dalam satu daftar. Hari pertama dan hari ketiga akan dibandingkan. Buat program untuk menampilkan jumlah siswa pada kedua hari tersebut dan selisihnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hari Pertama: 28 siswa
+Hari Ketiga: 27 siswa
+Selisih: 1 siswa
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Kita memiliki daftar harga paket data yaitu <strong>Rp15.000, Rp25.000, Rp40.000, dan Rp60.000</strong>. Saldo yang tersedia sebesar <strong>Rp50.000</strong>. Paket ketiga ingin dibeli. Buat program yang menampilkan harga paket tersebut dan saldo yang masih tersisa setelah pembelian.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Harga Paket: Rp40000
+Sisa Saldo: Rp10000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Sebuah game mencatat jumlah nyawa pada empat karakter yaitu <strong>3, 5, 2, dan 4</strong>. Data tersebut disimpan dalam satu daftar. Karakter kedua mendapatkan tambahan <strong>2 nyawa</strong>. Buat program yang memperbarui data karakter kedua dan menampilkan seluruh jumlah nyawa terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nyawa Terbaru:
+3, 7, 2, 4
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Sebuah kantin mencatat harga enam makanan yaitu <strong>Rp5.000, Rp8.000, Rp6.000, Rp10.000, Rp7.000, dan Rp9.000</strong>. Buat program yang membaca seluruh harga dan menghitung total uang yang dibutuhkan jika membeli satu dari setiap makanan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Harga Semua Makanan: Rp45000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Kita mencatat durasi belajar selama enam hari yaitu <strong>45, 70, 30, 90, 60, dan 40 menit</strong>. Target belajar harian adalah minimal <strong>60 menit</strong>. Buat program yang memeriksa seluruh data dan menghitung berapa hari yang berhasil mencapai target.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hari yang Mencapai Target: 3
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Sebuah toko mencatat harga lima barang yaitu <strong>Rp12.000, Rp25.000, Rp18.000, Rp30.000, dan Rp15.000</strong>. Barang dengan harga minimal <strong>Rp20.000</strong> masuk kategori <strong>“Mahal”</strong>, sedangkan harga di bawah <strong>Rp20.000</strong> masuk kategori <strong>“Murah”</strong>. Buat program yang membaca seluruh harga dan menampilkan kategori setiap barang.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Barang 1: Rp12000 - Murah
+Barang 2: Rp25000 - Mahal
+Barang 3: Rp18000 - Murah
+Barang 4: Rp30000 - Mahal
+Barang 5: Rp15000 - Murah
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Sebuah kelas mencatat jumlah buku yang dibawa enam siswa yaitu <strong>2, 5, 1, 4, 3, dan 6 buku</strong>. Buat program yang membaca seluruh data, menghitung total buku yang dibawa, dan menghitung berapa siswa yang membawa lebih dari <strong>3 buku</strong>.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Buku: 21
+Siswa yang Membawa Lebih dari 3 Buku: 3
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Latihan Dasar JavaScript — <strong>Paket C</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

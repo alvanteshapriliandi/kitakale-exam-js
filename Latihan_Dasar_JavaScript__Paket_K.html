@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Latihan Dasar JavaScript: Paket K</title>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Latihan Dasar JavaScript — Paket K</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Sebuah ruang belajar memiliki lampu pintar bernama <strong>“Smart Lamp 04”</strong>, tingkat kecerahan awal <strong>50%</strong>, jumlah lampu <strong>4 buah</strong>, dan status lampu menyala <strong>false</strong>. Saat kegiatan dimulai, lampu dinyalakan dan tingkat kecerahannya berubah menjadi <strong>75%</strong>. Buat program yang menyimpan dan menampilkan kondisi lampu terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Lampu: Smart Lamp 04
+Kecerahan: 75%
+Jumlah Lampu: 4
+Menyala: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Kita memiliki akun kursus online bernama <strong>“Coding Pemula”</strong>, jumlah materi awal <strong>12 materi</strong>, progress belajar <strong>60%</strong>, dan status langganan aktif <strong>true</strong>. Hari ini <strong>2 materi baru</strong> berhasil diselesaikan sehingga jumlah materi yang sudah selesai menjadi <strong>14</strong>. Buat program yang menyimpan dan menampilkan kondisi akun terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kursus: Coding Pemula
+Materi Selesai: 14
+Progress: 60%
+Langganan Aktif: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Sebuah dispenser sekolah bernama <strong>“Dispenser Kantin”</strong> memiliki jumlah gelas awal <strong>40 buah</strong>, suhu air dingin <strong>12°C</strong>, dan status siap digunakan <strong>true</strong>. Setelah jam istirahat, jumlah gelas yang tersedia berubah menjadi <strong>27 buah</strong>. Buat program yang menyimpan dan menampilkan kondisi dispenser terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Dispenser: Dispenser Kantin
+Gelas Tersisa: 27
+Suhu Air: 12°C
+Siap Digunakan: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Kita memiliki kartu permainan dengan nama <strong>“Arcade Card”</strong>, saldo permainan awal <strong>25 kredit</strong>, nomor kartu <strong>620</strong>, dan status kartu diblokir <strong>false</strong>. Setelah melakukan isi ulang, saldo permainan berubah menjadi <strong>40 kredit</strong>. Buat program yang menyimpan dan menampilkan kondisi kartu terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kartu: Arcade Card
+Nomor Kartu: 620
+Saldo Kredit: 40
+Diblokir: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Sebuah toko menjual <strong>4 kaos</strong> dengan harga <strong>Rp35.000 per kaos</strong> dan <strong>2 topi</strong> dengan harga <strong>Rp20.000 per topi</strong>. Pembelian tersebut mendapatkan potongan langsung sebesar <strong>Rp15.000</strong>. Buat program untuk mengetahui harga seluruh barang sebelum potongan dan jumlah yang harus dibayar setelah mendapatkan potongan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Harga Kaos: Rp140000
+Harga Topi: Rp40000
+Total Sebelum Potongan: Rp180000
+Total Setelah Potongan: Rp165000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Sekolah memiliki taman berbentuk <strong>lingkaran</strong> dengan jari-jari <strong>7 meter</strong>. Di sekeliling taman akan dipasang tali pembatas dengan biaya <strong>Rp8.000 per meter</strong>. Gunakan nilai π = <strong>22 ÷ 7</strong>. Buat program untuk mengetahui panjang tali yang dibutuhkan dan total biaya pemasangannya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Keliling Taman: 44 meter
+Total Biaya: Rp352000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah kotak penyimpanan berbentuk <strong>kubus</strong> memiliki panjang sisi <strong>40 cm</strong>. Di dalamnya akan dimasukkan paket kecil yang masing-masing membutuhkan ruang <strong>8.000 cm³</strong>. Buat program untuk mengetahui volume kotak dan berapa paket kecil yang dapat dimasukkan jika seluruh ruang digunakan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Kotak: 64000 cm³
+Jumlah Paket: 8
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Panitia memiliki <strong>173 kartu peserta</strong>. Setiap meja pendaftaran membutuhkan <strong>15 kartu</strong>. Buat program untuk mengetahui berapa meja yang bisa mendapatkan kartu lengkap, berapa kartu yang tersisa, dan apakah jumlah kartu tersebut habis dibagi <strong>15</strong>.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Meja dengan Kartu Lengkap: 11
+Kartu Tersisa: 8
+Habis Dibagi 15: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Sebuah aplikasi sekolah memberikan badge <strong>“Tugas Lengkap”</strong> jika jumlah tugas yang sudah dikumpulkan mencapai minimal <strong>8 tugas</strong>. Saat ini kita sudah mengumpulkan <strong>9 tugas</strong>. Jika syarat tersebut terpenuhi, tampilkan pesan bahwa badge berhasil didapatkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Badge Tugas Lengkap Didapatkan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Sebuah flashdisk memiliki ruang kosong <strong>6 GB</strong>. File video yang ingin dipindahkan memiliki ukuran <strong>8 GB</strong>. Jika ruang kosong mencukupi, file dapat dipindahkan. Jika tidak mencukupi, proses pemindahan gagal. Buat program yang menentukan hasilnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ruang Penyimpanan Tidak Cukup
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Sebuah layanan pengiriman menentukan kategori jarak. Jika jarak maksimal <strong>3 km</strong>, kategorinya <strong>“Dekat”</strong>. Jika jaraknya lebih dari <strong>3 km sampai 10 km</strong>, kategorinya <strong>“Sedang”</strong>. Jika lebih dari <strong>10 km</strong>, kategorinya <strong>“Jauh”</strong>. Jarak pengiriman hari ini adalah <strong>8 km</strong>. Buat program yang menentukan kategori jarak tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jarak: 8 km
+Kategori: Sedang
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Mesin tiket memiliki beberapa kode tujuan. Kode <strong>“MDN”</strong> berarti <strong>Medan</strong>, <strong>“BJI”</strong> berarti <strong>Binjai</strong>, dan <strong>“TBT”</strong> berarti <strong>Tebing Tinggi</strong>. Tiket yang sedang dibeli menggunakan kode <strong>“BJI”</strong>. Buat program yang menampilkan kota tujuan berdasarkan kode tersebut. Jika kode tidak tersedia, tampilkan bahwa tujuan tidak ditemukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode Tujuan: BJI
+Tujuan: Binjai
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Kita memiliki daftar aplikasi yang sering digunakan untuk belajar yaitu <strong>“Chrome”, “VS Code”, “Canva”, “GitHub”, dan “YouTube”</strong>. Buat program yang menampilkan aplikasi pada urutan kedua, aplikasi terakhir, dan jumlah seluruh aplikasi.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Aplikasi Kedua: VS Code
+Aplikasi Terakhir: YouTube
+Jumlah Aplikasi: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Sebuah kantin mencatat jumlah stok empat jenis makanan yaitu <strong>10, 14, 8, dan 12 porsi</strong>. Setelah diperiksa kembali, stok makanan pertama ternyata seharusnya <strong>7 porsi</strong>. Buat program yang memperbaiki data tersebut lalu menampilkan seluruh stok terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Stok Terbaru:
+7, 14, 8, 12
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Kita mencatat jumlah kuota empat paket internet yaitu <strong>5 GB, 10 GB, 15 GB, dan 20 GB</strong>. Paket kedua dan paket ketiga ingin dibandingkan. Buat program yang menampilkan jumlah kuota keduanya dan menghitung selisih kuotanya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Paket Kedua: 10 GB
+Paket Ketiga: 15 GB
+Selisih Kuota: 5 GB
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Sebuah game mencatat jumlah diamond pada empat karakter yaitu <strong>120, 180, 250, dan 200 diamond</strong>. Karakter keempat menggunakan <strong>50 diamond</strong> untuk membeli item. Buat program yang memperbarui data tersebut lalu menampilkan seluruh jumlah diamond terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Diamond Terbaru:
+120, 180, 250, 150
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Sebuah percetakan menyiapkan brosur dalam <strong>6 kelompok cetak</strong>. Kelompok pertama berisi <strong>5 brosur</strong>, kelompok kedua <strong>10 brosur</strong>, kelompok ketiga <strong>15 brosur</strong>, dan jumlahnya terus bertambah <strong>5 brosur</strong> sampai kelompok keenam. Buat program yang menampilkan jumlah brosur pada setiap kelompok dan menghitung total seluruh brosur.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kelompok 1: 5 brosur
+Kelompok 2: 10 brosur
+Kelompok 3: 15 brosur
+Kelompok 4: 20 brosur
+Kelompok 5: 25 brosur
+Kelompok 6: 30 brosur
+
+Total Brosur: 105
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Kita mencatat suhu enam ruangan yaitu <strong>24°C, 28°C, 31°C, 26°C, 29°C, dan 33°C</strong>. Suhu dianggap nyaman jika berada dari <strong>25°C sampai 30°C</strong>. Buat program yang memeriksa semua data dan menghitung berapa ruangan yang memiliki suhu nyaman.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ruangan dengan Suhu Nyaman: 3
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Sebuah bus memiliki kapasitas <strong>20 penumpang</strong>. Jumlah penumpang pada lima perjalanan tercatat <strong>12, 17, 10, 15, dan 18 orang</strong>. Buat program yang menghitung jumlah kursi kosong pada setiap perjalanan dan total seluruh kursi kosong dari lima perjalanan tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Perjalanan 1: 8 kursi kosong
+Perjalanan 2: 3 kursi kosong
+Perjalanan 3: 10 kursi kosong
+Perjalanan 4: 5 kursi kosong
+Perjalanan 5: 2 kursi kosong
+
+Total Kursi Kosong: 28
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Sebuah aplikasi mencatat keterlambatan pengumpulan enam tugas yaitu <strong>0, 2, 0, 1, 3, dan 0 hari</strong>. Nilai <strong>0</strong> berarti tugas dikumpulkan <strong>“Tepat Waktu”</strong>, sedangkan nilai lebih dari <strong>0</strong> berarti <strong>“Terlambat”</strong>. Buat program yang memeriksa semua tugas, menampilkan status masing-masing, lalu menghitung berapa tugas yang terlambat.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tugas 1: Tepat Waktu
+Tugas 2: Terlambat
+Tugas 3: Tepat Waktu
+Tugas 4: Terlambat
+Tugas 5: Terlambat
+Tugas 6: Tepat Waktu
+
+Jumlah Tugas Terlambat: 3
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Latihan Dasar JavaScript — <strong>Paket K</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

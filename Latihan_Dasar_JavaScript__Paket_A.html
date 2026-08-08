@@ -4,472 +4,7 @@
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <title>Latihan Dasar JavaScript: Paket A</title>
-        <style>
-            :root {
-                --purple-950: #2e0f55;
-                --purple-900: #3f176d;
-                --purple-800: #51208a;
-                --purple-700: #6d28d9;
-                --purple-600: #7c3aed;
-                --purple-200: #ddd0ff;
-                --purple-100: #f2ecff;
-                --purple-50: #faf8ff;
-                --yellow-500: #f6c90e;
-                --yellow-400: #ffd43b;
-                --yellow-200: #ffe99a;
-                --yellow-100: #fff7cf;
-                --ink: #2d2438;
-                --muted: #6f657c;
-                --line: #e8e0f2;
-                --white: #ffffff;
-                --shadow: 0 16px 42px rgba(63, 23, 109, 0.10);
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            html {
-                background: var(--white);
-            }
-
-            body {
-                margin: 0;
-                color: var(--ink);
-                font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-                font-size: 15px;
-                line-height: 1.7;
-                background:
-                    radial-gradient(circle at 8% 4%, rgba(124, 58, 237, .10), transparent 18rem),
-                    radial-gradient(circle at 92% 9%, rgba(255, 212, 59, .18), transparent 16rem),
-                    #ffffff;
-            }
-
-            .page-shell {
-                width: min(100% - 32px, 980px);
-                margin: 32px auto 56px;
-                background: var(--white);
-                border: 1px solid rgba(109, 40, 217, .12);
-                border-radius: 28px;
-                box-shadow: var(--shadow);
-                overflow: hidden;
-            }
-
-            .brand-bar {
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 20px;
-                padding: 18px 30px;
-                color: var(--white);
-                background: linear-gradient(120deg, var(--purple-950), var(--purple-700));
-                overflow: hidden;
-            }
-
-            .brand-bar::after {
-                content: "";
-                position: absolute;
-                width: 180px;
-                height: 180px;
-                right: -55px;
-                top: -95px;
-                border: 28px solid rgba(255, 212, 59, .22);
-                border-radius: 50%;
-            }
-
-            .brand-name {
-                display: inline-flex;
-                align-items: center;
-                gap: 12px;
-                font-size: 13px;
-                font-weight: 900;
-                letter-spacing: .16em;
-                text-transform: uppercase;
-            }
-
-            .brand-mark {
-                display: grid;
-                place-items: center;
-                min-width: 42px;
-                height: 42px;
-                padding: 0 11px;
-                color: var(--purple-950);
-                background: var(--yellow-400);
-                border-radius: 12px;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-                font-weight: 900;
-                letter-spacing: -.08em;
-            }
-
-            .brand-tag {
-                position: relative;
-                z-index: 1;
-                padding: 7px 12px;
-                border: 1px solid rgba(255, 255, 255, .24);
-                border-radius: 999px;
-                background: rgba(255, 255, 255, .10);
-                font-size: 12px;
-                font-weight: 700;
-                letter-spacing: .04em;
-            }
-
-            .hero {
-                position: relative;
-                padding: 42px 44px 36px;
-                background: linear-gradient(180deg, #ffffff 0%, #fcfaff 100%);
-                border-bottom: 1px solid var(--line);
-            }
-
-            .hero::after {
-                content: "";
-                position: absolute;
-                left: 44px;
-                bottom: 0;
-                width: 112px;
-                height: 6px;
-                background: var(--yellow-400);
-                border-radius: 999px 999px 0 0;
-            }
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            }
-
-            h1 {
-                max-width: 760px;
-                margin: 0 0 18px;
-                color: var(--purple-950);
-                font-size: clamp(2rem, 5vw, 3.35rem);
-                line-height: 1.08;
-                letter-spacing: -.045em;
-                font-weight: 900;
-            }
-
-            .hero .topic,
-            .hero .instruction {
-                margin: 12px 0 0;
-                padding: 14px 18px;
-                border-radius: 16px;
-            }
-
-            .hero .topic {
-                color: var(--purple-900);
-                background: var(--purple-100);
-                border: 1px solid var(--purple-200);
-            }
-
-            .hero .instruction {
-                background: var(--yellow-100);
-                border: 1px solid var(--yellow-200);
-            }
-
-            .hero .topic strong,
-            .hero .instruction strong {
-                margin-right: 5px;
-                color: var(--purple-950);
-            }
-
-            .questions {
-                display: grid;
-                gap: 22px;
-                padding: 34px 44px 46px;
-                background: #ffffff;
-            }
-
-            .question-card {
-                position: relative;
-                display: grid;
-                grid-template-columns: 70px minmax(0, 1fr);
-                column-gap: 20px;
-                row-gap: 10px;
-                padding: 26px 26px 24px;
-                background: var(--white);
-                border: 1px solid var(--line);
-                border-radius: 22px;
-                box-shadow: 0 8px 26px rgba(63, 23, 109, .06);
-                break-inside: avoid;
-                overflow: hidden;
-            }
-
-            .question-card::before {
-                content: "";
-                position: absolute;
-                inset: 0 auto 0 0;
-                width: 5px;
-                background: linear-gradient(180deg, var(--purple-700) 0 72%, var(--yellow-400) 72% 100%);
-            }
-
-            .question-card h3 {
-                grid-column: 1;
-                grid-row: 1 / span 3;
-                align-self: start;
-                display: grid;
-                place-items: center;
-                width: 64px;
-                height: 64px;
-                margin: 0;
-                color: var(--white);
-                background: linear-gradient(145deg, var(--purple-950), var(--purple-700));
-                border-radius: 18px;
-                box-shadow: 0 8px 20px rgba(109, 40, 217, .22);
-                font-size: 1.45rem;
-                line-height: 1;
-                font-weight: 900;
-                letter-spacing: -.02em;
-            }
-
-            .question-card .question-text {
-                grid-column: 2;
-                margin: 0;
-                font-size: 15.5px;
-                line-height: 1.75;
-            }
-
-            .question-card .question-text strong {
-                color: var(--purple-900);
-                font-weight: 800;
-                box-shadow: inset 0 -0.36em 0 rgba(255, 212, 59, .33);
-            }
-
-            .output-label {
-                grid-column: 2;
-                display: inline-flex;
-                align-items: center;
-                width: fit-content;
-                margin: 7px 0 -2px !important;
-                padding: 6px 11px;
-                color: var(--purple-950);
-                background: var(--yellow-400);
-                border-radius: 9px 9px 4px 4px;
-                font-size: 12px;
-                line-height: 1.2;
-                font-weight: 900;
-                letter-spacing: .035em;
-                text-transform: uppercase;
-            }
-
-            .output-label::before {
-                content: ">_";
-                margin-right: 8px;
-                font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-                font-weight: 900;
-            }
-
-            pre {
-                grid-column: 2;
-                position: relative;
-                margin: 0;
-                padding: 20px 20px 18px;
-                overflow-x: auto;
-                color: #f7f2ff;
-                background: linear-gradient(145deg, #31134f, #4c1d76);
-                border: 1px solid rgba(124, 58, 237, .35);
-                border-radius: 4px 16px 16px 16px;
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06);
-            }
-
-            pre::after {
-                content: "JavaScript Output";
-                position: absolute;
-                right: 14px;
-                top: 9px;
-                color: rgba(255, 255, 255, .42);
-                font-size: 9px;
-                font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-                text-transform: uppercase;
-                letter-spacing: .12em;
-            }
-
-            code,
-            pre code {
-                font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-            }
-
-            pre code {
-                display: block;
-                padding: 0;
-                color: inherit;
-                background: transparent;
-                font-size: 13.5px;
-                line-height: 1.65;
-                white-space: pre-wrap;
-            }
-
-            a {
-                color: var(--purple-700);
-                text-decoration: none;
-            }
-
-            hr {
-                display: none;
-            }
-
-            .site-footer {
-                display: flex;
-                justify-content: space-between;
-                gap: 20px;
-                padding: 20px 30px;
-                color: rgba(255, 255, 255, .86);
-                background: var(--purple-950);
-                font-size: 12px;
-            }
-
-            .site-footer strong {
-                color: var(--yellow-400);
-            }
-
-            @media (max-width: 680px) {
-                .page-shell {
-                    width: min(100% - 18px, 980px);
-                    margin-top: 10px;
-                    border-radius: 18px;
-                }
-
-                .brand-bar {
-                    padding: 14px 18px;
-                }
-
-                .brand-tag {
-                    display: none;
-                }
-
-                .hero {
-                    padding: 30px 22px 28px;
-                }
-
-                .hero::after {
-                    left: 22px;
-                }
-
-                .questions {
-                    padding: 24px 18px 34px;
-                }
-
-                .question-card {
-                    grid-template-columns: 52px minmax(0, 1fr);
-                    gap: 12px;
-                    padding: 20px 16px 18px;
-                }
-
-                .question-card h3 {
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 13px;
-                    font-size: 1.05rem;
-                }
-
-                .question-card .question-text,
-                .output-label,
-                pre {
-                    grid-column: 1 / -1;
-                }
-
-                .question-card h3 {
-                    grid-row: auto;
-                }
-
-                pre {
-                    border-radius: 4px 13px 13px 13px;
-                }
-
-                .site-footer {
-                    flex-direction: column;
-                }
-            }
-
-            @page {
-                size: A4;
-                margin: 12mm;
-            }
-
-            @media print {
-                * {
-                    -webkit-print-color-adjust: exact !important;
-                    print-color-adjust: exact !important;
-                }
-
-                html,
-                body {
-                    background: #ffffff !important;
-                }
-
-                body {
-                    font-size: 10pt;
-                }
-
-                .page-shell {
-                    width: 100%;
-                    margin: 0;
-                    border: 0;
-                    border-radius: 0;
-                    box-shadow: none;
-                    overflow: visible;
-                }
-
-                .brand-bar {
-                    padding: 10mm 9mm 6mm;
-                }
-
-                .hero {
-                    padding: 9mm 9mm 7mm;
-                }
-
-                .hero::after {
-                    left: 9mm;
-                }
-
-                h1 {
-                    font-size: 26pt;
-                }
-
-                .questions {
-                    gap: 5mm;
-                    padding: 7mm 9mm;
-                }
-
-                .question-card {
-                    grid-template-columns: 15mm minmax(0, 1fr);
-                    column-gap: 4mm;
-                    padding: 5mm;
-                    border-radius: 4mm;
-                    box-shadow: none;
-                    break-inside: avoid-page;
-                    page-break-inside: avoid;
-                }
-
-                .question-card h3 {
-                    width: 13mm;
-                    height: 13mm;
-                    border-radius: 3mm;
-                    font-size: 13pt;
-                }
-
-                .question-card .question-text {
-                    font-size: 9.6pt;
-                    line-height: 1.55;
-                }
-
-                pre {
-                    padding: 4mm;
-                    border-radius: 1mm 3mm 3mm 3mm;
-                }
-
-                pre code {
-                    font-size: 8.6pt;
-                    line-height: 1.45;
-                }
-
-                .site-footer {
-                    padding: 4mm 9mm;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
     </head>
     <body id="preview">
         <main class="page-shell">
@@ -481,27 +16,23 @@
                 <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
             </header>
             <section class="hero">
-                <h1 class="code-line has-line-data" data-line-end="1" data-line-start="0">
-                    <a id="Latihan_Dasar_JavaScript_Paket_A_0"></a>Latihan Dasar JavaScript — Paket A
-                </h1>
-                <p class="has-line-data topic" data-line-end="3" data-line-start="2">
+                <h1>Latihan Dasar JavaScript — Paket A</h1>
+                <p class="topic">
                     <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
                 </p>
-                <p class="has-line-data instruction" data-line-end="5" data-line-start="4">
+                <p class="instruction">
                     <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
                 </p>
             </section>
             <section aria-label="Daftar soal JavaScript" class="questions">
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="9" data-line-start="8">
-                        <a id="01_8"></a>01
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="11" data-line-start="10">Kita membuat data akun untuk aplikasi belajar sekolah. Data yang disimpan adalah nama <strong>“Raka”</strong>, kelas <strong>“XI RPL 1”</strong>, poin belajar <strong>1250</strong>, dan status akun aktif <strong>true</strong>. Setelah menyelesaikan satu latihan, poin Raka berubah menjadi <strong>1300</strong>. Buat program yang menyimpan semua data tersebut dan menampilkan data terbaru akun Raka. </p>
-                    <p class="has-line-data output-label" data-line-end="13" data-line-start="12">
+                    <h3>01</h3>
+                    <p class="question-text">Kita membuat data akun untuk aplikasi belajar sekolah. Data yang disimpan adalah nama <strong>“Raka”</strong>, kelas <strong>“XI RPL 1”</strong>, poin belajar <strong>1250</strong>, dan status akun aktif <strong>true</strong>. Setelah menyelesaikan satu latihan, poin Raka berubah menjadi <strong>1300</strong>. Buat program yang menyimpan semua data tersebut dan menampilkan data terbaru akun Raka. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="20" data-line-start="15">Nama: Raka
+						<code class="language-text">Nama: Raka
 Kelas: XI RPL 1
 Poin: 1300
 Status Aktif: true
@@ -509,15 +40,13 @@ Status Aktif: true
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="24" data-line-start="23">
-                        <a id="02_23"></a>02
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="26" data-line-start="25">Sebuah toko online memiliki produk bernama <strong>“Mechanical Keyboard”</strong> dengan harga tetap <strong>Rp275.000</strong>. Stok awalnya <strong>12 unit</strong> dan status tersedia adalah <strong>true</strong>. Hari ini 3 keyboard terjual sehingga stok berubah. Buat program yang menyimpan informasi produk tersebut dan menampilkan stok terbarunya. </p>
-                    <p class="has-line-data output-label" data-line-end="28" data-line-start="27">
+                    <h3>02</h3>
+                    <p class="question-text">Sebuah toko online memiliki produk bernama <strong>“Mechanical Keyboard”</strong> dengan harga tetap <strong>Rp275.000</strong>. Stok awalnya <strong>12 unit</strong> dan status tersedia adalah <strong>true</strong>. Hari ini 3 keyboard terjual sehingga stok berubah. Buat program yang menyimpan informasi produk tersebut dan menampilkan stok terbarunya. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="35" data-line-start="30">Produk: Mechanical Keyboard
+						<code class="language-text">Produk: Mechanical Keyboard
 Harga: Rp275000
 Stok Sekarang: 9
 Status Tersedia: true
@@ -525,15 +54,13 @@ Status Tersedia: true
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="39" data-line-start="38">
-                        <a id="03_38"></a>03
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="41" data-line-start="40">Kita sedang membuat data untuk sebuah game. Nama karakter adalah <strong>“Volt”</strong>, level awal <strong>18</strong>, jumlah koin <strong>4.500</strong>, dan status VIP <strong>false</strong>. Setelah menyelesaikan sebuah misi, level karakter berubah menjadi <strong>19</strong> dan jumlah koin menjadi <strong>5.200</strong>. Buat program yang menyimpan dan menampilkan kondisi karakter setelah misi selesai. </p>
-                    <p class="has-line-data output-label" data-line-end="43" data-line-start="42">
+                    <h3>03</h3>
+                    <p class="question-text">Kita sedang membuat data untuk sebuah game. Nama karakter adalah <strong>“Volt”</strong>, level awal <strong>18</strong>, jumlah koin <strong>4.500</strong>, dan status VIP <strong>false</strong>. Setelah menyelesaikan sebuah misi, level karakter berubah menjadi <strong>19</strong> dan jumlah koin menjadi <strong>5.200</strong>. Buat program yang menyimpan dan menampilkan kondisi karakter setelah misi selesai. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="50" data-line-start="45">Karakter: Volt
+						<code class="language-text">Karakter: Volt
 Level: 19
 Koin: 5200
 Status VIP: false
@@ -541,15 +68,13 @@ Status VIP: false
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="54" data-line-start="53">
-                        <a id="04_53"></a>04
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="56" data-line-start="55">Sebuah kelas memiliki nama <strong>“XI RPL”</strong>, wali kelas <strong>“Bu Rina”</strong>, jumlah siswa <strong>32</strong>, dan status kelas aktif <strong>true</strong>. Hari ini ada satu siswa pindah sekolah sehingga jumlah siswa berubah menjadi <strong>31</strong>. Buat program yang menyimpan informasi kelas dan menampilkan data setelah perubahan tersebut. </p>
-                    <p class="has-line-data output-label" data-line-end="58" data-line-start="57">
+                    <h3>04</h3>
+                    <p class="question-text">Sebuah kelas memiliki nama <strong>“XI RPL”</strong>, wali kelas <strong>“Bu Rina”</strong>, jumlah siswa <strong>32</strong>, dan status kelas aktif <strong>true</strong>. Hari ini ada satu siswa pindah sekolah sehingga jumlah siswa berubah menjadi <strong>31</strong>. Buat program yang menyimpan informasi kelas dan menampilkan data setelah perubahan tersebut. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="65" data-line-start="60">Kelas: XI RPL
+						<code class="language-text">Kelas: XI RPL
 Wali Kelas: Bu Rina
 Jumlah Siswa: 31
 Status Aktif: true
@@ -557,157 +82,135 @@ Status Aktif: true
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="69" data-line-start="68">
-                        <a id="05_68"></a>05
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="71" data-line-start="70">Kita membeli 2 porsi nasi ayam seharga <strong>Rp18.000 per porsi</strong>, 2 es teh seharga <strong>Rp5.000 per gelas</strong>, dan 1 puding seharga <strong>Rp8.000</strong>. Kita membayar menggunakan uang <strong>Rp60.000</strong>. Buat program untuk menghitung total belanja dan berapa uang yang masih tersisa. </p>
-                    <p class="has-line-data output-label" data-line-end="73" data-line-start="72">
+                    <h3>05</h3>
+                    <p class="question-text">Kita membeli 2 porsi nasi ayam seharga <strong>Rp18.000 per porsi</strong>, 2 es teh seharga <strong>Rp5.000 per gelas</strong>, dan 1 puding seharga <strong>Rp8.000</strong>. Kita membayar menggunakan uang <strong>Rp60.000</strong>. Buat program untuk menghitung total belanja dan berapa uang yang masih tersisa. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="79" data-line-start="75">Total Belanja: Rp54000
+						<code class="language-text">Total Belanja: Rp54000
 Uang Dibayar: Rp60000
 Sisa Uang: Rp6000
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="83" data-line-start="82">
-                        <a id="06_82"></a>06
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="85" data-line-start="84">Panitia sekolah ingin membuat banner berbentuk <strong>persegi panjang</strong> dengan panjang <strong>4 meter</strong> dan lebar <strong>2 meter</strong>. Percetakan mengenakan biaya <strong>Rp35.000 untuk setiap meter persegi</strong>. Dana yang tersedia sebesar <strong>Rp300.000</strong>. Buat program untuk menghitung luas banner, total biaya cetak, dan mengecek apakah dana yang tersedia lebih besar dari biaya yang dibutuhkan. </p>
-                    <p class="has-line-data output-label" data-line-end="87" data-line-start="86">
+                    <h3>06</h3>
+                    <p class="question-text">Panitia sekolah ingin membuat banner berbentuk <strong>persegi panjang</strong> dengan panjang <strong>4 meter</strong> dan lebar <strong>2 meter</strong>. Percetakan mengenakan biaya <strong>Rp35.000 untuk setiap meter persegi</strong>. Dana yang tersedia sebesar <strong>Rp300.000</strong>. Buat program untuk menghitung luas banner, total biaya cetak, dan mengecek apakah dana yang tersedia lebih besar dari biaya yang dibutuhkan. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="93" data-line-start="89">Luas Banner: 8 m²
+						<code class="language-text">Luas Banner: 8 m²
 Total Biaya: Rp280000
 Dana Lebih Besar dari Biaya: true
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="97" data-line-start="96">
-                        <a id="07_96"></a>07
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="99" data-line-start="98">Sebuah kotak penyimpanan barang di gudang berbentuk <strong>balok</strong> dengan panjang <strong>80 cm</strong>, lebar <strong>50 cm</strong>, dan tinggi <strong>40 cm</strong>. Satu barang membutuhkan ruang sekitar <strong>8.000 cm³</strong>. Buat program untuk menghitung volume kotak dan perkiraan jumlah barang yang bisa masuk jika seluruh ruang digunakan. </p>
-                    <p class="has-line-data output-label" data-line-end="101" data-line-start="100">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah kotak penyimpanan barang di gudang berbentuk <strong>balok</strong> dengan panjang <strong>80 cm</strong>, lebar <strong>50 cm</strong>, dan tinggi <strong>40 cm</strong>. Satu barang membutuhkan ruang sekitar <strong>8.000 cm³</strong>. Buat program untuk menghitung volume kotak dan perkiraan jumlah barang yang bisa masuk jika seluruh ruang digunakan. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="106" data-line-start="103">Volume Kotak: 160000 cm³
+						<code class="language-text">Volume Kotak: 160000 cm³
 Jumlah Barang yang Bisa Masuk: 20
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="110" data-line-start="109">
-                        <a id="08_109"></a>08
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="112" data-line-start="111">Dalam sebuah game, kita memiliki <strong>1.850 poin</strong>. Setiap kemenangan menambah <strong>120 poin</strong> dan setiap kekalahan mengurangi <strong>50 poin</strong>. Hari ini tercatat <strong>4 kemenangan</strong> dan <strong>2 kekalahan</strong>. Setelah semua poin dihitung, cek apakah poin akhirnya lebih dari <strong>2.000</strong> dan apakah sisa pembagian poin tersebut dengan <strong>100</strong> sama dengan <strong>0</strong>. </p>
-                    <p class="has-line-data output-label" data-line-end="114" data-line-start="113">
+                    <h3>08</h3>
+                    <p class="question-text">Dalam sebuah game, kita memiliki <strong>1.850 poin</strong>. Setiap kemenangan menambah <strong>120 poin</strong> dan setiap kekalahan mengurangi <strong>50 poin</strong>. Hari ini tercatat <strong>4 kemenangan</strong> dan <strong>2 kekalahan</strong>. Setelah semua poin dihitung, cek apakah poin akhirnya lebih dari <strong>2.000</strong> dan apakah sisa pembagian poin tersebut dengan <strong>100</strong> sama dengan <strong>0</strong>. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="120" data-line-start="116">Poin Akhir: 2230
+						<code class="language-text">Poin Akhir: 2230
 Poin Lebih dari 2000: true
 Habis Dibagi 100: false
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="124" data-line-start="123">
-                        <a id="09_123"></a>09
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="126" data-line-start="125">Sebuah toko memberikan voucher gratis ongkir jika total belanja mencapai minimal <strong>Rp150.000</strong>. Hari ini total belanja kita adalah <strong>Rp185.000</strong>. Jika syarat tersebut terpenuhi, program perlu menampilkan pesan <strong>“Gratis Ongkir Didapatkan”</strong>. </p>
-                    <p class="has-line-data output-label" data-line-end="128" data-line-start="127">
+                    <h3>09</h3>
+                    <p class="question-text">Sebuah toko memberikan voucher gratis ongkir jika total belanja mencapai minimal <strong>Rp150.000</strong>. Hari ini total belanja kita adalah <strong>Rp185.000</strong>. Jika syarat tersebut terpenuhi, program perlu menampilkan pesan <strong>“Gratis Ongkir Didapatkan”</strong>. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="132" data-line-start="130">Gratis Ongkir Didapatkan
+						<code class="language-text">Gratis Ongkir Didapatkan
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="136" data-line-start="135">
-                        <a id="10_135"></a>10
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="138" data-line-start="137">Kita mempunyai saldo e-wallet sebesar <strong>Rp95.000</strong> dan ingin membeli tiket konser sekolah seharga <strong>Rp85.000</strong>. Jika saldo cukup, transaksi dinyatakan berhasil. Jika saldo tidak cukup, transaksi dinyatakan gagal. Buat program yang menentukan status transaksi tersebut. </p>
-                    <p class="has-line-data output-label" data-line-end="140" data-line-start="139">
+                    <h3>10</h3>
+                    <p class="question-text">Kita mempunyai saldo e-wallet sebesar <strong>Rp95.000</strong> dan ingin membeli tiket konser sekolah seharga <strong>Rp85.000</strong>. Jika saldo cukup, transaksi dinyatakan berhasil. Jika saldo tidak cukup, transaksi dinyatakan gagal. Buat program yang menentukan status transaksi tersebut. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="144" data-line-start="142">Transaksi Berhasil
+						<code class="language-text">Transaksi Berhasil
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="148" data-line-start="147">
-                        <a id="11_147"></a>11
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="150" data-line-start="149">Nilai akhir pelajaran JavaScript kita adalah <strong>82</strong>. Sekolah menggunakan kategori <strong>A untuk nilai 90–100</strong>, <strong>B untuk 80–89</strong>, <strong>C untuk 70–79</strong>, dan <strong>D untuk nilai di bawah 70</strong>. Buat program yang menentukan kategori dari nilai tersebut. </p>
-                    <p class="has-line-data output-label" data-line-end="152" data-line-start="151">
+                    <h3>11</h3>
+                    <p class="question-text">Nilai akhir pelajaran JavaScript kita adalah <strong>82</strong>. Sekolah menggunakan kategori <strong>A untuk nilai 90–100</strong>, <strong>B untuk 80–89</strong>, <strong>C untuk 70–79</strong>, dan <strong>D untuk nilai di bawah 70</strong>. Buat program yang menentukan kategori dari nilai tersebut. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="157" data-line-start="154">Nilai: 82
+						<code class="language-text">Nilai: 82
 Kategori: B
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="161" data-line-start="160">
-                        <a id="12_160"></a>12
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="163" data-line-start="162">Mesin minuman di kantin memiliki pilihan <strong>1 = Air Mineral</strong>, <strong>2 = Es Teh</strong>, <strong>3 = Jus Jeruk</strong>, dan <strong>4 = Susu Cokelat</strong>. Hari ini tombol yang dipilih adalah nomor <strong>3</strong>. Buat program yang menampilkan nama minuman sesuai nomor pilihan. Jika nomor tidak tersedia, tampilkan pesan bahwa pilihan tidak ditemukan. </p>
-                    <p class="has-line-data output-label" data-line-end="165" data-line-start="164">
+                    <h3>12</h3>
+                    <p class="question-text">Mesin minuman di kantin memiliki pilihan <strong>1 = Air Mineral</strong>, <strong>2 = Es Teh</strong>, <strong>3 = Jus Jeruk</strong>, dan <strong>4 = Susu Cokelat</strong>. Hari ini tombol yang dipilih adalah nomor <strong>3</strong>. Buat program yang menampilkan nama minuman sesuai nomor pilihan. Jika nomor tidak tersedia, tampilkan pesan bahwa pilihan tidak ditemukan. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="170" data-line-start="167">Pilihan: 3
+						<code class="language-text">Pilihan: 3
 Minuman: Jus Jeruk
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="174" data-line-start="173">
-                        <a id="13_173"></a>13
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="176" data-line-start="175">Sebuah kelompok belajar terdiri dari <strong>Rina, Budi, Siska, Dimas, dan Naya</strong>. Semua nama tersebut perlu disimpan dalam satu daftar. Setelah dibuat, program perlu menampilkan nama anggota pertama, anggota ketiga, dan anggota terakhir dari daftar tersebut. </p>
-                    <p class="has-line-data output-label" data-line-end="178" data-line-start="177">
+                    <h3>13</h3>
+                    <p class="question-text">Sebuah kelompok belajar terdiri dari <strong>Rina, Budi, Siska, Dimas, dan Naya</strong>. Semua nama tersebut perlu disimpan dalam satu daftar. Setelah dibuat, program perlu menampilkan nama anggota pertama, anggota ketiga, dan anggota terakhir dari daftar tersebut. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="184" data-line-start="180">Anggota Pertama: Rina
+						<code class="language-text">Anggota Pertama: Rina
 Anggota Ketiga: Siska
 Anggota Terakhir: Naya
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="188" data-line-start="187">
-                        <a id="14_187"></a>14
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="190" data-line-start="189">Kita mencatat nilai empat latihan JavaScript yaitu <strong>78, 85, 90, dan 72</strong> dalam satu daftar. Ternyata nilai latihan kedua salah dicatat dan seharusnya <strong>88</strong>. Buat program yang menyimpan seluruh nilai, memperbaiki data yang salah, lalu menampilkan daftar nilai terbaru. </p>
-                    <p class="has-line-data output-label" data-line-end="192" data-line-start="191">
+                    <h3>14</h3>
+                    <p class="question-text">Kita mencatat nilai empat latihan JavaScript yaitu <strong>78, 85, 90, dan 72</strong> dalam satu daftar. Ternyata nilai latihan kedua salah dicatat dan seharusnya <strong>88</strong>. Buat program yang menyimpan seluruh nilai, memperbaiki data yang salah, lalu menampilkan daftar nilai terbaru. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="197" data-line-start="194">Nilai Terbaru:
+						<code class="language-text">Nilai Terbaru:
 78, 88, 90, 72
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="201" data-line-start="200">
-                        <a id="15_200"></a>15
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="203" data-line-start="202">Sebuah toko komputer mencatat stok <strong>mouse 15 unit, keyboard 8 unit, headset 12 unit, dan webcam 6 unit</strong> dalam satu daftar stok. Hari ini stok keyboard berubah menjadi <strong>5 unit</strong> dan webcam menjadi <strong>4 unit</strong>. Buat program yang menyimpan data tersebut dan menampilkan kondisi stok setelah diperbarui. </p>
-                    <p class="has-line-data output-label" data-line-end="205" data-line-start="204">
+                    <h3>15</h3>
+                    <p class="question-text">Sebuah toko komputer mencatat stok <strong>mouse 15 unit, keyboard 8 unit, headset 12 unit, dan webcam 6 unit</strong> dalam satu daftar stok. Hari ini stok keyboard berubah menjadi <strong>5 unit</strong> dan webcam menjadi <strong>4 unit</strong>. Buat program yang menyimpan data tersebut dan menampilkan kondisi stok setelah diperbarui. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="212" data-line-start="207">Mouse: 15
+						<code class="language-text">Mouse: 15
 Keyboard: 5
 Headset: 12
 Webcam: 4
@@ -715,30 +218,26 @@ Webcam: 4
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="216" data-line-start="215">
-                        <a id="16_215"></a>16
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="218" data-line-start="217">Kantin sekolah mencatat harga empat menu secara berurutan: <strong>nasi goreng Rp15.000, mie goreng Rp13.000, ayam geprek Rp18.000, dan bakso Rp14.000</strong>. Kita membeli menu pertama dan menu ketiga. Buat program yang menyimpan semua harga dalam satu daftar lalu menghitung total harga dua menu yang dibeli. </p>
-                    <p class="has-line-data output-label" data-line-end="220" data-line-start="219">
+                    <h3>16</h3>
+                    <p class="question-text">Kantin sekolah mencatat harga empat menu secara berurutan: <strong>nasi goreng Rp15.000, mie goreng Rp13.000, ayam geprek Rp18.000, dan bakso Rp14.000</strong>. Kita membeli menu pertama dan menu ketiga. Buat program yang menyimpan semua harga dalam satu daftar lalu menghitung total harga dua menu yang dibeli. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="226" data-line-start="222">Harga Nasi Goreng: Rp15000
+						<code class="language-text">Harga Nasi Goreng: Rp15000
 Harga Ayam Geprek: Rp18000
 Total Belanja: Rp33000
 </code>
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="230" data-line-start="229">
-                        <a id="17_229"></a>17
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="232" data-line-start="231">Sebuah kelas memiliki daftar nilai latihan <strong>75, 82, 68, 90, 77, dan 88</strong>. Kita ingin melihat seluruh nilai tersebut satu per satu dari awal sampai akhir. Setelah semua data dibaca, hitung juga total seluruh nilai yang terkumpul. </p>
-                    <p class="has-line-data output-label" data-line-end="234" data-line-start="233">
+                    <h3>17</h3>
+                    <p class="question-text">Sebuah kelas memiliki daftar nilai latihan <strong>75, 82, 68, 90, 77, dan 88</strong>. Kita ingin melihat seluruh nilai tersebut satu per satu dari awal sampai akhir. Setelah semua data dibaca, hitung juga total seluruh nilai yang terkumpul. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="245" data-line-start="236">Nilai 1: 75
+						<code class="language-text">Nilai 1: 75
 Nilai 2: 82
 Nilai 3: 68
 Nilai 4: 90
@@ -750,15 +249,13 @@ Total Nilai: 480
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="249" data-line-start="248">
-                        <a id="18_248"></a>18
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="251" data-line-start="250">Sebuah toko online mencatat jumlah pesanan selama 7 hari yaitu <strong>12, 18, 9, 21, 15, 24, dan 11 pesanan</strong>. Toko ingin mengetahui total pesanan selama seminggu dan berapa hari yang memiliki jumlah pesanan lebih dari <strong>15</strong>. </p>
-                    <p class="has-line-data output-label" data-line-end="253" data-line-start="252">
+                    <h3>18</h3>
+                    <p class="question-text">Sebuah toko online mencatat jumlah pesanan selama 7 hari yaitu <strong>12, 18, 9, 21, 15, 24, dan 11 pesanan</strong>. Toko ingin mengetahui total pesanan selama seminggu dan berapa hari yang memiliki jumlah pesanan lebih dari <strong>15</strong>. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="266" data-line-start="255">Hari 1: 12 pesanan
+						<code class="language-text">Hari 1: 12 pesanan
 Hari 2: 18 pesanan
 Hari 3: 9 pesanan
 Hari 4: 21 pesanan
@@ -772,15 +269,13 @@ Hari dengan Pesanan Lebih dari 15: 3
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="270" data-line-start="269">
-                        <a id="19_269"></a>19
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="272" data-line-start="271">Dalam sebuah game, skor lima pemain adalah <strong>850, 1.250, 970, 1.500, dan 1.100</strong>. Pemain dianggap masuk kategori <strong>Pro</strong> jika skornya minimal <strong>1.000</strong>, sedangkan skor di bawah itu masuk kategori <strong>Rookie</strong>. Buat program yang membaca semua skor secara berurutan dan menampilkan kategori setiap pemain. </p>
-                    <p class="has-line-data output-label" data-line-end="274" data-line-start="273">
+                    <h3>19</h3>
+                    <p class="question-text">Dalam sebuah game, skor lima pemain adalah <strong>850, 1.250, 970, 1.500, dan 1.100</strong>. Pemain dianggap masuk kategori <strong>Pro</strong> jika skornya minimal <strong>1.000</strong>, sedangkan skor di bawah itu masuk kategori <strong>Rookie</strong>. Buat program yang membaca semua skor secara berurutan dan menampilkan kategori setiap pemain. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="282" data-line-start="276">Pemain 1: 850 - Rookie
+						<code class="language-text">Pemain 1: 850 - Rookie
 Pemain 2: 1250 - Pro
 Pemain 3: 970 - Rookie
 Pemain 4: 1500 - Pro
@@ -789,15 +284,13 @@ Pemain 5: 1100 - Pro
 					</pre>
                 </article>
                 <article class="question-card">
-                    <h3 class="code-line has-line-data" data-line-end="286" data-line-start="285">
-                        <a id="20_285"></a>20
-                    </h3>
-                    <p class="has-line-data question-text" data-line-end="288" data-line-start="287">Sebuah toko memiliki stok enam barang sebanyak <strong>8, 0, 12, 3, 0, dan 7 unit</strong>. Kita ingin mengecek seluruh stok satu per satu. Untuk stok <strong>0</strong>, tampilkan bahwa barang sudah habis. Untuk stok yang masih tersedia, tampilkan jumlah stoknya. Setelah semua barang diperiksa, hitung juga berapa jenis barang yang sudah habis. </p>
-                    <p class="has-line-data output-label" data-line-end="290" data-line-start="289">
+                    <h3>20</h3>
+                    <p class="question-text">Sebuah toko memiliki stok enam barang sebanyak <strong>8, 0, 12, 3, 0, dan 7 unit</strong>. Kita ingin mengecek seluruh stok satu per satu. Untuk stok <strong>0</strong>, tampilkan bahwa barang sudah habis. Untuk stok yang masih tersedia, tampilkan jumlah stoknya. Setelah semua barang diperiksa, hitung juga berapa jenis barang yang sudah habis. </p>
+                    <p class="output-label">
                         <strong>Output yang Diharapkan:</strong>
                     </p>
                     <pre>
-						<code class="has-line-data language-text" data-line-end="301" data-line-start="292">Barang 1: Stok 8
+						<code class="language-text">Barang 1: Stok 8
 Barang 2: Habis
 Barang 3: Stok 12
 Barang 4: Stok 3

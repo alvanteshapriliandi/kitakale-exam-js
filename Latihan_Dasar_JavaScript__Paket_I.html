@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Latihan Dasar JavaScript: Paket I</title>
+        <link rel="stylesheet" href="kitakale-latihan.css" />
+    </head>
+    <body>
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">LATIHAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Latihan Dasar JavaScript — Paket I</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Sekolah memiliki alat penyiram tanaman otomatis bernama <strong>“Kebun Pintar 01”</strong>. Kelembapan tanah awalnya <strong>42%</strong> dan status alat aktif <strong>true</strong>. Setelah tanaman disiram, kelembapan tanah berubah menjadi <strong>68%</strong>. Buat program yang menyimpan dan menampilkan kondisi alat terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Alat: Kebun Pintar 01
+Kelembapan Tanah: 68%
+Status Aktif: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Kita memiliki kartu anggota tempat olahraga dengan nama <strong>“Fit Student”</strong>, nomor anggota <strong>126</strong>, jumlah kunjungan awal <strong>7 kali</strong>, dan status keanggotaan aktif <strong>true</strong>. Setelah datang berolahraga hari ini, jumlah kunjungan bertambah satu. Buat program yang menyimpan dan menampilkan informasi keanggotaan terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Member: Fit Student
+Nomor Anggota: 126
+Jumlah Kunjungan: 8 kali
+Status Aktif: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Sebuah akun game memiliki nama <strong>“PixelRider”</strong>, jumlah token awal <strong>360</strong>, level <strong>14</strong>, dan status sedang bermain <strong>false</strong>. Setelah mendapatkan hadiah harian, token bertambah menjadi <strong>450</strong>. Buat program yang menyimpan dan menampilkan kondisi akun terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nama Akun: PixelRider
+Token: 450
+Level: 14
+Sedang Bermain: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Kita sedang mengerjakan kuis online dengan judul <strong>“Quiz JavaScript 1”</strong>. Jumlah percobaan awal adalah <strong>1 kali</strong>, nilai terakhir <strong>78</strong>, dan status kuis selesai awalnya <strong>false</strong>. Setelah mengerjakan kembali, jumlah percobaan berubah menjadi <strong>2 kali</strong> dan status kuis menjadi selesai. Buat program yang menyimpan dan menampilkan kondisi kuis terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kuis: Quiz JavaScript 1
+Jumlah Percobaan: 2 kali
+Nilai Terakhir: 78
+Sudah Selesai: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Sebuah kelompok menyewa <strong>3 mikrofon</strong> dengan biaya <strong>Rp12.000 per mikrofon untuk setiap jam</strong>. Mikrofon digunakan selama <strong>2 jam</strong>. Selain itu, kelompok juga menyewa kabel tambahan dengan biaya tetap <strong>Rp8.000</strong>. Buat program untuk mengetahui biaya sewa mikrofon dan total seluruh biaya yang harus dibayar.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Biaya Mikrofon: Rp72000
+Biaya Kabel: Rp8000
+Total Biaya: Rp80000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Panitia membuat <strong>10 bendera berbentuk segitiga</strong> dengan panjang alas <strong>40 cm</strong> dan tinggi <strong>30 cm</strong>. Semua bendera memiliki ukuran yang sama. Buat program untuk mengetahui luas satu bendera dan total luas bahan yang dibutuhkan untuk membuat seluruh bendera.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Satu Bendera: 600 cm²
+Jumlah Bendera: 10
+Total Luas Bahan: 6000 cm²
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Sebuah kotak besar berbentuk <strong>kubus</strong> memiliki panjang sisi <strong>60 cm</strong>. Kotak tersebut akan diisi dengan kotak kecil yang masing-masing memiliki panjang sisi <strong>30 cm</strong>. Buat program untuk mengetahui volume kotak besar, volume satu kotak kecil, dan berapa kotak kecil yang dapat dimasukkan jika seluruh ruang digunakan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Kotak Besar: 216000 cm³
+Volume Kotak Kecil: 27000 cm³
+Jumlah Kotak Kecil: 8
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Kita mempunyai <strong>286 foto</strong> yang akan dimasukkan ke dalam album. Setiap album penuh dapat menyimpan <strong>25 foto</strong>. Buat program untuk mengetahui jumlah album yang bisa terisi penuh, jumlah foto yang tersisa, dan apakah jumlah album penuh minimal <strong>10</strong> serta masih terdapat foto tersisa.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Album Penuh: 11
+Foto Tersisa: 11
+Kondisi Terpenuhi: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Sebuah game memberikan achievement <strong>“Kolektor Koin”</strong> jika jumlah koin pemain mencapai minimal <strong>1.000 koin</strong>. Saat ini kita sudah memiliki <strong>1.250 koin</strong>. Jika syarat tersebut terpenuhi, tampilkan pesan bahwa achievement berhasil didapatkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Achievement Kolektor Koin Didapatkan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Sebuah layanan antar makanan memberikan gratis ongkir jika jarak pengiriman maksimal <strong>5 km</strong>. Pesanan yang sedang diproses memiliki jarak <strong>7 km</strong>. Jika masih berada dalam batas, ongkir gratis. Jika melewati batas, ongkir tetap berbayar. Buat program yang menentukan kondisi ongkir tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ongkir Berbayar
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Perpustakaan menentukan status keterlambatan berdasarkan jumlah hari. Jika buku dikembalikan tepat waktu, statusnya <strong>“Tepat Waktu”</strong>. Jika terlambat <strong>1 sampai 3 hari</strong>, statusnya <strong>“Terlambat Ringan”</strong>. Jika terlambat lebih dari <strong>3 hari</strong>, statusnya <strong>“Terlambat Berat”</strong>. Sebuah buku dikembalikan terlambat <strong>2 hari</strong>. Buat program yang menentukan status pengembaliannya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Terlambat: 2 hari
+Status: Terlambat Ringan
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Sebuah game memiliki pilihan mode dengan kode <strong>“CAS” = Casual</strong>, <strong>“RANK” = Ranked</strong>, dan <strong>“TRAIN” = Training</strong>. Mode yang dipilih saat ini memiliki kode <strong>“RANK”</strong>. Buat program yang menampilkan nama mode sesuai kode tersebut. Jika kode tidak tersedia, tampilkan bahwa mode tidak ditemukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kode Mode: RANK
+Mode: Ranked
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Kita memiliki daftar tempat untuk kegiatan sekolah yaitu <strong>“Aula”, “Lapangan”, “Perpustakaan”, “Lab Komputer”, dan “Ruang Seni”</strong>. Semua tempat tersebut disimpan dalam satu daftar. Buat program yang menampilkan tempat pada urutan kedua, tempat pada urutan kelima, dan jumlah seluruh tempat.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tempat Kedua: Lapangan
+Tempat Kelima: Ruang Seni
+Jumlah Tempat: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Sebuah toko mencatat stok empat jenis minuman yaitu <strong>18, 24, 15, dan 20 botol</strong>. Setelah dilakukan pengecekan, stok jenis ketiga ternyata seharusnya <strong>17 botol</strong>. Buat program yang memperbaiki data tersebut dan menampilkan seluruh stok terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Stok Terbaru:
+18, 24, 17, 20
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Kita memiliki daftar biaya empat kegiatan yaitu <strong>Rp15.000, Rp22.000, Rp18.000, dan Rp30.000</strong>. Kegiatan pertama dan ketiga akan diikuti pada hari yang sama. Buat program yang menampilkan biaya kedua kegiatan tersebut dan menghitung total biaya yang dibutuhkan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kegiatan Pertama: Rp15000
+Kegiatan Ketiga: Rp18000
+Total Biaya: Rp33000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Sebuah ruang penyimpanan memiliki kapasitas maksimal <strong>100 GB</strong>. Ukuran empat folder dicatat dalam satu daftar yaitu <strong>18 GB, 25 GB, 12 GB, dan 20 GB</strong>. Kita ingin menggunakan folder kedua dan keempat. Buat program yang menampilkan ukuran kedua folder tersebut, menghitung total ukurannya, dan mengetahui berapa kapasitas yang masih tersisa dari <strong>100 GB</strong>.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Folder Kedua: 25 GB
+Folder Keempat: 20 GB
+Total Digunakan: 45 GB
+Kapasitas Tersisa: 55 GB
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Sebuah game mencatat poin yang diperoleh dalam enam ronde yaitu <strong>10, 15, 20, 12, 18, dan 25 poin</strong>. Pada pertandingan khusus ini, setiap poin mendapatkan bonus menjadi <strong>2 kali lipat</strong>. Buat program yang menghitung poin baru setiap ronde dan total seluruh poin setelah bonus.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ronde 1: 20 poin
+Ronde 2: 30 poin
+Ronde 3: 40 poin
+Ronde 4: 24 poin
+Ronde 5: 36 poin
+Ronde 6: 50 poin
+
+Total Poin: 200
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Kita mencatat sisa kuota internet enam pengguna yaitu <strong>3 GB, 1 GB, 5 GB, 2 GB, 0 GB, dan 4 GB</strong>. Kuota dianggap <strong>menipis</strong> jika sisanya kurang dari <strong>2 GB</strong>. Buat program yang memeriksa seluruh data dan menghitung berapa pengguna yang kuotanya sudah menipis.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pengguna dengan Kuota Menipis: 2
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Sebuah tempat rental mencatat lama penggunaan sepeda dari lima pelanggan yaitu <strong>2, 1, 3, 4, dan 2 jam</strong>. Biaya rental adalah <strong>Rp6.000 per jam</strong>. Buat program yang menghitung biaya masing-masing pelanggan dan total pendapatan rental dari seluruh pelanggan tersebut.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pelanggan 1: Rp12000
+Pelanggan 2: Rp6000
+Pelanggan 3: Rp18000
+Pelanggan 4: Rp24000
+Pelanggan 5: Rp12000
+
+Total Pendapatan: Rp72000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Kita mencatat nilai enam tugas yaitu <strong>65, 80, 72, 90, 58, dan 85</strong>. Tugas dengan nilai minimal <strong>75</strong> dinyatakan <strong>“Tuntas”</strong>, sedangkan nilai di bawah <strong>75</strong> dinyatakan <strong>“Belum Tuntas”</strong>. Buat program yang memeriksa seluruh nilai, menampilkan status setiap tugas, lalu menghitung jumlah tugas yang sudah tuntas.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tugas 1: 65 - Belum Tuntas
+Tugas 2: 80 - Tuntas
+Tugas 3: 72 - Belum Tuntas
+Tugas 4: 90 - Tuntas
+Tugas 5: 58 - Belum Tuntas
+Tugas 6: 85 - Tuntas
+
+Jumlah Tugas Tuntas: 3
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Latihan Dasar JavaScript — <strong>Paket I</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>
