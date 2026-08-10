@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Ujian Dasar JavaScript: Paket I</title>
+        <link rel="stylesheet" href="../kitakale-latihan.css" />
+    </head>
+    <body id="preview">
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">UJIAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Ujian Dasar JavaScript — Paket I</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Pemutar musik bernama “Kelas Beats” memuat 12 lagu, volume 40, dan status acak <code>false</code>. Volume dinaikkan menjadi 55. Tampilkan data pemutar musik.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Playlist: Kelas Beats
+Lagu: 12
+Volume: 55
+Acak: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Data servis sepeda memiliki nomor 44, jenis “Gunung”, biaya Rp25.000, dan status selesai <code>false</code>. Servis selesai dilakukan. Tampilkan data terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nomor: 44
+Jenis: Gunung
+Biaya: Rp25000
+Selesai: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Catatan tabungan acara diberi nama “Dana Expo”, saldo 75 ribu, target 120 ribu, dan status cukup <code>false</code>. Ada tambahan 30 ribu. Tampilkan kondisi dana.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Dana: Dana Expo
+Saldo: 105
+Target: 120
+Cukup: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Jadwal piket berisi kelas “XI TKJ”, hari “Rabu”, jumlah petugas 4, dan status hadir lengkap <code>false</code>. Satu petugas datang sehingga jumlah petugas 5 dan lengkap. Tampilkan jadwal.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kelas: XI TKJ
+Hari: Rabu
+Petugas: 5
+Lengkap: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Kita membeli 3 buku gambar Rp7.000 dan 4 penggaris Rp2.000. Ada potongan Rp3.000. Tampilkan total sebelum potongan dan pembayaran akhir.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Total Awal: Rp29000
+Total Bayar: Rp26000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Tutup meja bundar memiliki jari-jari 14 cm. Gunakan π = 22/7. Tampilkan luas tutup meja dan keliling pinggirnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas: 616 cm²
+Keliling: 88 cm
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Lemari mini berbentuk balok 80 cm × 30 cm × 25 cm dibagi menjadi 10 ruang sama besar. Tampilkan volume lemari dan volume setiap ruang.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Lemari: 60000 cm³
+Volume per Ruang: 6000 cm³
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Sebanyak 275 foto akan dimasukkan ke album, masing-masing halaman memuat 12 foto. Tampilkan jumlah halaman penuh, sisa foto, dan apakah foto habis dibagi 12.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Halaman Penuh: 22
+Sisa Foto: 11
+Habis Dibagi 12: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Bonus presensi diberikan jika jumlah hadir tepat 5 hari. Kehadiran minggu ini 5 hari. Tampilkan <code>Bonus Presensi Didapat</code> bila sesuai.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Bonus Presensi Didapat
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Komputer boleh dipakai bila status perbaikan <code>false</code>. Status perbaikan komputer adalah <code>true</code>. Tampilkan keputusan pemakaian.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Komputer Sedang Diperbaiki
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Sisa kuota 3 GB. Jika minimal 8 GB <code>Lega</code>, jika minimal 3 GB <code>Cukup</code>, selain itu <code>Hemat</code>. Tampilkan kondisi kuota.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kuota: Cukup
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Kode layanan perpustakaan <code>P</code> = Pinjam, <code>K</code> = Kembali, <code>D</code> = Donasi. Kode yang dipilih <code>D</code>. Tampilkan layanan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Layanan: Donasi
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Daftar jenis tanaman adalah <code>“Lidah Mertua”, “Kaktus”, “Mawar”, “Melati”</code>. Tampilkan tanaman kedua, tanaman terakhir, dan jumlah jenis.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tanaman Kedua: Kaktus
+Tanaman Terakhir: Melati
+Jumlah Jenis: 4
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Jumlah koin empat akun adalah <code>25, 40, 30, 18</code>. Akun pertama mendapat bonus 7 koin. Tampilkan jumlah koin terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Koin: 32, 40, 30, 18
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Daftar durasi tiga lagu dan satu iklan adalah <code>180, 210, 150, 30</code> detik. Tampilkan durasi lagu kedua dan iklan, lalu totalnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Lagu Kedua: 210 detik
+Iklan: 30 detik
+Total: 240 detik
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Daftar stok camilan adalah <code>9, 12, 7, 15</code>. Kita membeli camilan pertama dan membayar Rp10.000, harga satuannya Rp1.000. Tampilkan stok pertama setelah beli dan kembalian.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Stok Pertama: 8
+Kembalian: Rp9000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Jumlah cetakan yang gagal dari lima mesin adalah <code>1, 0, 2, 1, 3</code>. Tampilkan angka setiap mesin dan total cetakan gagal.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Mesin 1: 1 gagal
+Mesin 2: 0 gagal
+Mesin 3: 2 gagal
+Mesin 4: 1 gagal
+Mesin 5: 3 gagal
+Total Gagal: 7
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Nilai enam latihan adalah <code>72, 80, 65, 90, 78, 69</code>. Nilai minimal 75 dinyatakan mencapai target. Tampilkan jumlah latihan yang mencapai target.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Mencapai Target: 3
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Ukuran file lima tugas adalah <code>4, 12, 7, 15, 9</code> MB. File lebih dari 10 MB berstatus <code>Besar</code>, lainnya <code>Normal</code>. Tampilkan status tiap file.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">File 1: Normal
+File 2: Besar
+File 3: Normal
+File 4: Besar
+File 5: Normal
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Daftar nomor buku adalah <code>2, 4, 6, 8, 10</code>. Biaya sampul per buku Rp1.500. Tampilkan biaya setiap buku dan total biaya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Buku 1: Rp1500
+Buku 2: Rp1500
+Buku 3: Rp1500
+Buku 4: Rp1500
+Buku 5: Rp1500
+Total Biaya: Rp7500
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Ujian Dasar JavaScript — <strong>Paket I</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

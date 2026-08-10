@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Ujian Dasar JavaScript: Paket A</title>
+        <link rel="stylesheet" href="../kitakale-latihan.css" />
+    </head>
+    <body id="preview">
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">UJIAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Ujian Dasar JavaScript — Paket A</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Klub robotik menyimpan nama proyek “RoboSirap”, nomor meja 6, jumlah baterai 14, dan status alat siap <code>true</code>. Tiga baterai dipakai saat uji coba. Tampilkan data proyek setelah uji coba.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Proyek: RoboSirap
+Meja: 6
+Baterai: 11
+Siap: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Di aplikasi perpustakaan, judul daftar bacaan “Web Dasar” tetap, jumlah halaman yang sudah dibaca 42, target 80, dan status selesai <code>false</code>. Setelah membaca 18 halaman lagi, tampilkan progres terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Daftar: Web Dasar
+Halaman Dibaca: 60
+Target: 80
+Selesai: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Sebuah rekaman podcast bernama “Suara Kelas” berdurasi 12 menit, punya 3 segmen, dan status publikasi <code>false</code>. Segmen pembuka dihapus sehingga durasinya menjadi 9 menit dan segmennya tinggal 2. Tampilkan data terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Podcast: Suara Kelas
+Durasi: 9 menit
+Segmen: 2
+Dipublikasikan: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Tim futsal memakai nama “Pixel FC”, memiliki 9 rompi, kapten “Dito”, dan status latihan <code>true</code>. Dua rompi dicuci dan tidak bisa dipakai sementara. Tampilkan keadaan latihan sekarang.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Tim: Pixel FC
+Kapten: Dito
+Rompi Siap Pakai: 7
+Latihan Aktif: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Kelas mencetak 18 kartu nama dengan biaya Rp700 per kartu dan membeli 2 spidol seharga Rp8.000. Dana yang dibawa Rp35.000. Tampilkan biaya cetak, total belanja, dan sisa dana.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Biaya Cetak: Rp12600
+Total Belanja: Rp28600
+Sisa Dana: Rp6400
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Area untuk menaruh bean bag berbentuk persegi panjang, panjangnya 7 m dan lebarnya 5 m. Satu alas menutup 5 m². Tampilkan luas area dan jumlah alas yang diperlukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Area: 35 m²
+Jumlah Alas: 7
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Kotak donasi berbentuk kubus dengan sisi 30 cm akan diisi amplop kecil yang masing-masing memerlukan ruang 1.000 cm³. Tampilkan volume kotak dan banyak amplop yang dapat dimuat.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Kotak: 27000 cm³
+Amplop Maksimal: 27
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Game kelas memberi 45 token untuk setiap dari 6 misi selesai, lalu memotong 35 token untuk membuka tema. Token dibagi rata kepada 5 anggota. Tampilkan token sebelum dibagi, token tiap anggota, dan sisa pembagiannya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Token Tersedia: 235
+Token per Anggota: 47
+Sisa Token: 0
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Peminjaman tripod boleh dicatat jika kartu anggota masih aktif. Status kartu perpustakaan media hari ini <code>true</code>. Tampilkan <code>Peminjaman Dicatat</code> bila syarat itu terpenuhi.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Peminjaman Dicatat
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Ruangan podcast boleh dipakai bila jadwalnya kosong. Jadwal saat ini berstatus <code>false</code> untuk terisi. Tampilkan <code>Ruangan Tersedia</code> atau <code>Ruangan Sedang Dipakai</code>.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ruangan Tersedia
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Jumlah sampah plastik yang terkumpul adalah 24 kg. Jika minimal 30 kg statusnya <code>Hebat</code>, jika minimal 15 kg statusnya <code>Cukup</code>, selain itu <code>Perlu Tambah</code>. Tampilkan status hari ini.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Status Pengumpulan: Cukup
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Kode jalur bus sekolah adalah <code>U</code> untuk Utara, <code>S</code> untuk Selatan, <code>T</code> untuk Timur, dan <code>B</code> untuk Barat. Kode hari ini <code>T</code>. Tampilkan arah jalurnya; kode lain berarti <code>Jalur Tidak Ada</code>.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Jalur: Timur
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Daftar stiker acara berisi <code>“Bintang”, “Awan”, “Bulan”, “Pelangi”, “Matahari”</code>. Tampilkan stiker urutan pertama, keempat, dan jumlah stiker.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pertama: Bintang
+Keempat: Pelangi
+Jumlah Stiker: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Jumlah pengunjung stan selama empat sesi adalah <code>12, 18, 15, 20</code>. Sesi ketiga bertambah 4 setelah data masuk terlambat. Tampilkan seluruh data terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pengunjung: 12, 18, 19, 20
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Daftar ukuran file desain adalah <code>24, 31, 18, 40</code> MB. Tampilkan ukuran file kedua dan terakhir, lalu selisihnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">File Kedua: 31 MB
+File Terakhir: 40 MB
+Selisih: 9 MB
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Daftar nilai kuis adalah <code>70, 82, 76, 90</code>. Nilai pertama dan ketiga akan digabung untuk nilai remedial. Tampilkan keduanya dan totalnya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Nilai 1: 70
+Nilai 3: 76
+Total: 146
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Jumlah halaman komik yang dibaca selama lima hari adalah <code>8, 12, 10, 15, 9</code>. Tampilkan bacaan tiap hari dan total halaman.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hari 1: 8 halaman
+Hari 2: 12 halaman
+Hari 3: 10 halaman
+Hari 4: 15 halaman
+Hari 5: 9 halaman
+Total Halaman: 54
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Daftar durasi video tugas adalah <code>4, 7, 3, 8, 5</code> menit. Video berdurasi minimal 5 menit masuk catatan layak. Tampilkan jumlah video layak.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Video Layak: 3
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Enam anggota mendapat langkah harian <code>3200, 5100, 4700, 6500, 2800, 5300</code>. Target harian 5000 langkah. Tampilkan status <code>Target</code> atau <code>Belum Target</code> untuk tiap anggota.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Anggota 1: Belum Target
+Anggota 2: Target
+Anggota 3: Belum Target
+Anggota 4: Target
+Anggota 5: Belum Target
+Anggota 6: Target
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Stok tiket permainan selama empat ronde adalah <code>9, 6, 8, 5</code>. Setiap ronde terjual 2 tiket. Tampilkan stok setelah penjualan pada setiap ronde dan total tiket tersisa.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ronde 1: 7
+Ronde 2: 4
+Ronde 3: 6
+Ronde 4: 3
+Total Sisa: 20
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Ujian Dasar JavaScript — <strong>Paket A</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>

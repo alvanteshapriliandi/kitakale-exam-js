@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Ujian Dasar JavaScript: Paket G</title>
+        <link rel="stylesheet" href="../kitakale-latihan.css" />
+    </head>
+    <body id="preview">
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">UJIAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Ujian Dasar JavaScript — Paket G</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Tipe Data • Operator • Percabangan • Array • Perulangan
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Tiket webinar berjudul “Desain Cepat”, berlaku “Sabtu”, memiliki 40 kursi, dan status pendaftaran <code>true</code>. Tiga kursi dipesan. Tampilkan data tiket setelah pemesanan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Webinar: Desain Cepat
+Hari: Sabtu
+Kursi Tersisa: 37
+Pendaftaran: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Papan menu kafe menampilkan “Matcha Latte”, stok 16, harga Rp12.000, dan status tersedia <code>true</code>. Tujuh gelas terjual. Tampilkan menu sekarang.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Menu: Matcha Latte
+Stok: 9
+Harga: Rp12000
+Tersedia: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Kelas virtual “Koding Sore” memiliki 18 peserta, kode ruang “KS18”, dan status mikrofon utama <code>false</code>. Moderator menyalakan mikrofon. Tampilkan informasi ruang.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kelas: Koding Sore
+Peserta: 18
+Kode: KS18
+Mikrofon Utama: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Album tugas memiliki judul “Kegiatan Jumat”, 10 foto, folder “Dokumentasi”, dan status dibagikan <code>false</code>. Dua foto buram dihapus. Tampilkan kondisi album.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Album: Kegiatan Jumat
+Foto: 8
+Folder: Dokumentasi
+Dibagikan: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">Toko kelas membuat 7 gantungan kunci, bahan tiap gantungan Rp2.500, lalu memasang kemasan Rp4.000 untuk seluruh pesanan. Tampilkan biaya bahan dan total modal.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Biaya Bahan: Rp17500
+Total Modal: Rp21500
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Spanduk arah berbentuk segitiga beralas 10 m dan tinggi 6 m. Kain dijual seharga Rp15.000 per m². Tampilkan luas spanduk dan biaya kain.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Spanduk: 30 m²
+Biaya Kain: Rp450000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Bak penyimpanan berbentuk balok 70 cm × 40 cm × 25 cm. Sebuah wadah kecil memerlukan 3.500 cm³. Tampilkan volume bak dan jumlah wadah kecil.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Bak: 70000 cm³
+Wadah Kecil: 20
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Sebanyak 128 poin dibagikan kepada 9 pemain setelah 2 poin dipakai untuk biaya masuk. Tampilkan poin yang dibagi, poin tiap pemain, dan sisa poin.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Poin Dibagi: 126
+Poin per Pemain: 14
+Sisa Poin: 0
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Lagu dapat masuk daftar pentas bila sudah lolos cek suara. Status lolos cek adalah <code>true</code>. Tampilkan <code>Masuk Daftar Pentas</code> bila terpenuhi.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Masuk Daftar Pentas
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Kunci loker dapat dipinjam jika jumlah kunci lebih dari 0. Jumlah kunci yang tersedia 0. Tampilkan hasil peminjaman.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kunci Tidak Tersedia
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Jumlah transaksi kantin hari ini 33. Jika minimal 50 status <code>Ramai</code>, jika minimal 20 <code>Normal</code>, selain itu <code>Sepi</code>. Tampilkan status kantin.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kantin: Normal
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Kode ruang ujian <code>R1</code> = Ruang 1, <code>R2</code> = Ruang 2, <code>LAB</code> = Laboratorium. Kode peserta <code>LAB</code>. Tampilkan ruang ujian.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Ruang Ujian: Laboratorium
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Daftar rute pulang adalah <code>“Sekolah”, “Simpang”, “Pasar”, “Taman”, “Rumah”</code>. Tampilkan titik kedua, titik keempat, dan jumlah titik.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Titik Kedua: Simpang
+Titik Keempat: Taman
+Jumlah Titik: 5
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Jumlah pengikut lima kanal adalah <code>120, 135, 98, 150, 110</code>. Kanal ketiga mendapat 12 pengikut. Tampilkan data terbaru.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pengikut: 120, 135, 110, 150, 110
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Daftar jarak lari adalah <code>2, 5, 3, 4</code> km. Tampilkan jarak kedua dan keempat, lalu total keduanya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Lari Kedua: 5 km
+Lari Keempat: 4 km
+Total: 9 km
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Daftar harga foto cetak adalah <code>3000, 4000, 5000, 6000</code>. Kita mengambil foto ketiga dan membayar Rp10.000. Tampilkan harga foto dan kembaliannya.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Harga Foto Ketiga: Rp5000
+Kembalian: Rp5000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Empat kelompok mengumpulkan <code>12, 9, 14, 11</code> botol plastik. Tampilkan botol setiap kelompok dan total botol.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Kelompok 1: 12 botol
+Kelompok 2: 9 botol
+Kelompok 3: 14 botol
+Kelompok 4: 11 botol
+Total Botol: 46
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Jumlah menit keterlambatan adalah <code>0, 5, 0, 3, 2, 0</code>. Nilai lebih dari 0 berarti terlambat. Tampilkan jumlah siswa terlambat.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Siswa Terlambat: 3
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Nilai tingkat air lima pot adalah <code>8, 3, 6, 2, 9</code>. Nilai minimal 5 berstatus <code>Cukup</code>, sisanya <code>Tambah Air</code>. Tampilkan status tiap pot.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pot 1: Cukup
+Pot 2: Tambah Air
+Pot 3: Cukup
+Pot 4: Tambah Air
+Pot 5: Cukup
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">Lima pesanan memiliki <code>2, 3, 1, 4, 2</code> roti. Harga satu roti Rp3.000. Tampilkan biaya tiap pesanan dan total pemasukan.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Pesanan 1: Rp6000
+Pesanan 2: Rp9000
+Pesanan 3: Rp3000
+Pesanan 4: Rp12000
+Pesanan 5: Rp6000
+Total Pemasukan: Rp36000
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Ujian Dasar JavaScript — <strong>Paket G</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>
