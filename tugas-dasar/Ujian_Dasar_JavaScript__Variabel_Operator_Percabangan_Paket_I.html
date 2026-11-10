@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Ujian Dasar JavaScript: Variabel, Operator, dan Percabangan — Paket I</title>
+        <link rel="stylesheet" href="../kitakale-latihan.css" />
+    </head>
+    <body id="preview">
+        <main class="page-shell">
+            <header class="brand-bar">
+                <div class="brand-name">
+                    <span class="brand-mark">&lt;/&gt;</span>
+                    <span>Kitakale Coding Lab</span>
+                </div>
+                <span class="brand-tag">UJIAN • JAVASCRIPT</span>
+            </header>
+            <section class="hero">
+                <h1>Ujian Dasar JavaScript — Variabel, Operator, dan Percabangan (Paket I)</h1>
+                <p class="topic">
+                    <strong>Topik:</strong> Variabel • Operator Aritmatika • Operator Perbandingan • Operator Logika • Percabangan (if, else, else if)
+                </p>
+                <p class="instruction">
+                    <strong>Petunjuk:</strong> Baca setiap soal cerita dengan teliti. Tentukan data yang dibutuhkan, lalu buat program JavaScript untuk menyelesaikan masalahnya. Materi soal hanya variabel, operator, dan percabangan.
+                </p>
+                <p class="instruction">
+                    <strong>Ketentuan Pengerjaan:</strong> Nilai diberikan dari proses program, bukan hanya tampilan akhir. Simpan data awal dari cerita, lakukan proses yang diminta, lalu tampilkan hasil akhirnya. Jangan menulis nilai hasil atau pesan akhir secara langsung.
+                </p>
+            </section>
+            <section aria-label="Daftar soal JavaScript" class="questions">
+                <article class="question-card">
+                    <h3>01</h3>
+                    <p class="question-text">Panitia acara menyimpan nama acara “Pensi”, jumlah panitia 12, tiket tersisa 100, dan status berjalan <code>true</code>. 25 tiket terjual. Tampilkan data acara sekarang.  Ketentuan proses: Simpan data awal yang ada pada cerita. Lakukan setiap perubahan secara berurutan, lalu tampilkan kondisi akhirnya. Nilai akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Acara: Pensi
+Panitia: 12
+Tiket: 75
+Berjalan: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>02</h3>
+                    <p class="question-text">Divisi dokumentasi menyimpan nama divisi “Dokumentasi”, jumlah kamera 4, jumlah baterai 10, dan status siap <code>true</code>. 3 baterai habis terpakai. Tampilkan data divisi sekarang.  Ketentuan proses: Simpan data awal yang ada pada cerita. Lakukan setiap perubahan secara berurutan, lalu tampilkan kondisi akhirnya. Nilai akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Divisi: Dokumentasi
+Kamera: 4
+Baterai: 7
+Siap: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>03</h3>
+                    <p class="question-text">Stan informasi menyimpan nama stan “Suara”, jumlah pengunjung 30, jumlah kursi 18, dan status penuh <code>false</code>. 8 pengunjung baru datang. Tampilkan data stan terbaru.  Ketentuan proses: Simpan data awal yang ada pada cerita. Lakukan setiap perubahan secara berurutan, lalu tampilkan kondisi akhirnya. Nilai akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Stan: Suara
+Pengunjung: 38
+Kursi: 18
+Penuh: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>04</h3>
+                    <p class="question-text">Laci keuangan menyimpan nama laci “Keuangan”, jumlah amplop 15, jumlah kuitansi 9, dan status dikunci <code>true</code>. 4 kuitansi baru masuk. Tampilkan data laci terbaru.  Ketentuan proses: Simpan data awal yang ada pada cerita. Lakukan setiap perubahan secara berurutan, lalu tampilkan kondisi akhirnya. Nilai akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Laci: Keuangan
+Amplop: 15
+Kuitansi: 13
+Dikunci: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>05</h3>
+                    <p class="question-text">OSIS membeli 10 spanduk seharga Rp2.500 per buah dan 5 cat seharga Rp6.000 per buah. Dana yang disiapkan Rp60.000. Tampilkan biaya spanduk, total belanja, dan sisa dana.  Ketentuan proses: Simpan seluruh angka pada cerita, lakukan semua operasi hitung dari data tersebut, lalu tampilkan hasil akhir. Nilai hasil tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Biaya Spanduk: Rp25000
+Total Belanja: Rp55000
+Sisa Dana: Rp5000
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>06</h3>
+                    <p class="question-text">Tribun tamu berbentuk persegi panjang, panjangnya 16 m dan lebarnya 4 m. Satu lembar kain menutup 8 m². Tampilkan luas tribun dan jumlah kain.  Ketentuan proses: Simpan seluruh angka pada cerita, lakukan semua operasi hitung dari data tersebut, lalu tampilkan hasil akhir. Nilai hasil tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Luas Tribun: 64 m²
+Jumlah Kain: 8
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>07</h3>
+                    <p class="question-text">Kotak suara berbentuk kubus dengan sisi 9 cm. Setiap kertas suara memerlukan ruang 27 cm³. Tampilkan volume kotak dan banyak kertas suara yang dapat dimuat.  Ketentuan proses: Simpan seluruh angka pada cerita, lakukan semua operasi hitung dari data tersebut, lalu tampilkan hasil akhir. Nilai hasil tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Volume Kotak: 729 cm³
+Kertas Suara: 27
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>08</h3>
+                    <p class="question-text">Panitia punya 62 gelang untuk dibagikan sama banyak kepada 9 kelas. Hasil bagi tiap kelas harus bilangan bulat. Tampilkan gelang yang diterima tiap kelas, banyak gelang yang terbagi, dan sisa gelang.  Ketentuan proses: Simpan seluruh angka pada cerita, lakukan semua operasi hitung dari data tersebut, lalu tampilkan hasil akhir. Nilai hasil tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Gelang per Kelas: 6
+Gelang Terbagi: 54
+Sisa Gelang: 8
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>09</h3>
+                    <p class="question-text">Jumlah suara setuju adalah 28. Kuorum adalah 25 suara. Tampilkan apakah suara sudah mencapai kuorum dan apakah suara masih di bawah kuorum.  Ketentuan proses: Simpan angka yang dibandingkan, hasilkan nilai boolean dengan operator perbandingan, lalu tampilkan hasilnya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Mencapai Kuorum: true
+Di Bawah Kuorum: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>10</h3>
+                    <p class="question-text">Sandi rapat yang benar adalah <code>osis</code>. Yang dimasukkan hari ini <code>OSIS</code>. Tampilkan apakah sama dan apakah berbeda.  Ketentuan proses: Simpan kedua data, hasilkan nilai boolean dengan operator perbandingan, lalu tampilkan hasilnya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Sandi Sama: false
+Sandi Berbeda: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>11</h3>
+                    <p class="question-text">Jumlah kursi terpasang adalah 40. Batas penuh adalah 50 kursi dan batas cukup adalah 30 kursi. Tampilkan apakah kursi lebih dari batas penuh dan apakah kursi sudah mencapai batas cukup.  Ketentuan proses: Simpan angka yang dibandingkan, hasilkan nilai boolean dengan operator perbandingan, lalu tampilkan hasilnya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Lebih Dari Penuh: false
+Sudah Cukup: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>12</h3>
+                    <p class="question-text">Durasi acara adalah 130 menit. Batas minimal 60 menit dan batas maksimal 120 menit. Tampilkan apakah memenuhi batas minimal dan apakah masih dalam batas maksimal.  Ketentuan proses: Simpan angka yang dibandingkan, hasilkan nilai boolean dengan operator perbandingan, lalu tampilkan hasilnya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Memenuhi Minimal: true
+Dalam Batas Maksimal: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>13</h3>
+                    <p class="question-text">Rapat dinyatakan sah jika kehadiran minimal 30 orang dan notulen siap. Kehadiran hari ini 40, sedangkan notulen bernilai <code>true</code>. Tampilkan hasil syarat angka, status notulen, dan hasil gabungannya.  Ketentuan proses: Simpan data syarat, gabungkan dengan operator logika, lalu tampilkan hasil booleannya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hadir Cukup: true
+Notulen Siap: true
+Rapat Sah: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>14</h3>
+                    <p class="question-text">Panggung boleh dipakai jika izin kepsek ada atau izin wakil ada. Izin kepsek bernilai <code>false</code> dan izin wakil bernilai <code>true</code>. Tampilkan kedua data dan hasil gabungannya.  Ketentuan proses: Simpan data syarat, gabungkan dengan operator logika, lalu tampilkan hasil booleannya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Izin Kepsek: false
+Izin Wakil: true
+Boleh Dipakai: true
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>15</h3>
+                    <p class="question-text">Status hujan bernilai <code>true</code>. Tampilkan status itu dan kebalikannya sebagai acara di lapangan terbuka.  Ketentuan proses: Simpan data syarat, balik nilainya dengan operator logika, lalu tampilkan hasil booleannya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hujan: true
+Lapangan Terbuka: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>16</h3>
+                    <p class="question-text">Dana kegiatan dicairkan jika proposal minimal 20 halaman dan sudah ditandatangani, atau jika ada dispensasi. Halaman proposal hari ini 10, tanda tangan bernilai <code>false</code>, dan dispensasi bernilai <code>false</code>. Tampilkan hasil syarat utama dan hasil keputusannya.  Ketentuan proses: Simpan data syarat, gabungkan dengan operator logika, lalu tampilkan hasil booleannya. Jangan memakai percabangan. Nilai true atau false tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Syarat Utama: false
+Dana Cair: false
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>17</h3>
+                    <p class="question-text">Kuota peserta adalah 18 orang. Jika kuota peserta minimal 15 orang, tampilkan <code>Dibuka</code>. Jika tidak, tampilkan <code>Ditutup</code>.  Ketentuan proses: Simpan data yang menentukan hasil, periksa kondisi dengan if dan else, lalu tampilkan pesannya. Pesan akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Hasil: Dibuka
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>18</h3>
+                    <p class="question-text">Skor kedisiplinan panitia adalah 77. Jika minimal 85, statusnya <code>Sangat Baik</code>. Jika minimal 70, statusnya <code>Baik</code>. Selain itu, statusnya <code>Perlu Pembinaan</code>. Tampilkan status hari ini.  Ketentuan proses: Simpan data yang menentukan kategori, periksa batas kondisi dengan if, else if, dan else, lalu tampilkan hasilnya. Kategori akhir tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Predikat: Baik
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>19</h3>
+                    <p class="question-text">Kode divisi <code>A</code> berarti Acara, <code>D</code> berarti Dana, dan <code>P</code> berarti Publikasi. Kode lain berarti <code>Divisi Tidak Ada</code>. Kode hari ini <code>P</code>. Tampilkan namanya.  Ketentuan proses: Simpan kode pilihan, tentukan hasil dengan if, else if, dan else, lalu tampilkan hasilnya. Nama hasil tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Divisi: Publikasi
+</code></pre>
+                </article>
+                <article class="question-card">
+                    <h3>20</h3>
+                    <p class="question-text">OSIS menyewa 9 tenda seharga Rp4.000 per tenda. Biaya tali penguat Rp5.000 ditambahkan hanya jika jumlah tenda lebih dari 4. Jumlah tenda hari ini 9. Setelah total dihitung, kategori <code>Besar</code> bila total minimal Rp40.000, <code>Sedang</code> bila minimal Rp25.000, selain itu <code>Kecil</code>. Tampilkan subtotal, total bayar, dan kategori.  Ketentuan proses: Simpan seluruh data pada cerita, hitung subtotal, tentukan biaya tambahan dengan if dan else, lalu tentukan kategori dengan if, else if, dan else. Nilai hasil dan kategori tidak boleh ditulis langsung.</p>
+                    <p class="output-label">
+                        <strong>Output yang Diharapkan:</strong>
+                    </p>
+                    <pre><code class="language-text">Subtotal: Rp36000
+Total Bayar: Rp41000
+Kategori: Besar
+</code></pre>
+                </article>
+            </section>
+            <footer class="site-footer">
+                <span>Ujian Dasar JavaScript — <strong>Paket I</strong></span>
+                <span>Kitakale • Belajar Logika dari Dasar</span>
+            </footer>
+        </main>
+    </body>
+</html>
